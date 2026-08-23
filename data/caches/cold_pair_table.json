@@ -1,0 +1,171 @@
+{
+ "schema": "paired_optimisation_control_evaluation_v1",
+ "cfa_reference_bits": 1.856773,
+ "design_sources": {
+  "plane": "a single on-axis normal-incidence ray",
+  "pupil": "the slot's own 8-ray pupil ensemble at its chief ray"
+ },
+ "evaluation": "16-ray pupil quadrature at the named slot; h=0.600 um, gap=1.250 um, air",
+ "response_axes": {
+  "columns_nm": [
+   420.0,
+   450.0,
+   470.0,
+   510.0,
+   540.0,
+   570.0,
+   600.0,
+   635.0,
+   670.0
+  ],
+  "rows": [
+   "R",
+   "G2",
+   "G1",
+   "B"
+  ]
+ },
+ "slots_evaluated": [
+  "r1a"
+ ],
+ "cache": {
+  "directory": "paired_control_cache",
+  "masks": "masks/<design_id>.npy -- the boolean design each row was scored from",
+  "responses": "responses.npz -- key '<design_id>@<slot>', the raw (well, wavelength) response behind that row's i_img, plus __well_order__ and __wavelengths_nm__"
+ },
+ "rows": [
+  {
+   "arm": "pupil",
+   "designed_for": "r1a",
+   "eval_cra_deg": 2.5,
+   "eval_azimuth_deg": 22.5,
+   "evaluated_at": "r1a",
+   "seed": 20260805,
+   "i_img": 1.361502024587166,
+   "vs_cfa": -0.49527097541283394,
+   "components": {
+    "i_td_bit_per_raw_pixel_e160": 1.5117862075272959,
+    "i_td_bit_per_raw_pixel_e20": 1.0573987321675131,
+    "i_td_bit_per_raw_pixel_e320": 1.667535856126924,
+    "i_td_bit_per_raw_pixel_e40": 1.209937678999196,
+    "i_td_bit_per_raw_pixel_e80": 1.3608516481149004,
+    "total_electrons_e160": 2004.051356429788,
+    "total_electrons_e20": 250.5064195537235,
+    "total_electrons_e320": 4008.102712859576,
+    "total_electrons_e40": 501.012839107447,
+    "total_electrons_e80": 1002.025678214894
+   },
+   "design_id": "pupil_seed20260805",
+   "mask_file": "paired_control_cache/masks/pupil_seed20260805.npy",
+   "response_key": "pupil_seed20260805@r1a"
+  },
+  {
+   "arm": "plane",
+   "designed_for": "",
+   "eval_cra_deg": 2.5,
+   "eval_azimuth_deg": 22.5,
+   "evaluated_at": "r1a",
+   "seed": 20260805,
+   "i_img": 1.2934956048561184,
+   "vs_cfa": -0.5632773951438816,
+   "components": {
+    "i_td_bit_per_raw_pixel_e160": 1.434551122836065,
+    "i_td_bit_per_raw_pixel_e20": 1.0065985667399944,
+    "i_td_bit_per_raw_pixel_e320": 1.5984060086392062,
+    "i_td_bit_per_raw_pixel_e40": 1.1433723797366564,
+    "i_td_bit_per_raw_pixel_e80": 1.2845499463286696,
+    "total_electrons_e160": 1987.0877957869984,
+    "total_electrons_e20": 248.3859744733748,
+    "total_electrons_e320": 3974.175591573997,
+    "total_electrons_e40": 496.7719489467496,
+    "total_electrons_e80": 993.5438978934992
+   },
+   "design_id": "plane_seed20260805",
+   "mask_file": "paired_control_cache/masks/plane_seed20260805.npy",
+   "response_key": "plane_seed20260805@r1a"
+  },
+  {
+   "arm": "pupil",
+   "designed_for": "r1a",
+   "eval_cra_deg": 2.5,
+   "eval_azimuth_deg": 22.5,
+   "evaluated_at": "r1a",
+   "seed": 20260806,
+   "i_img": 1.4491567842008066,
+   "vs_cfa": -0.4076162157991934,
+   "components": {
+    "i_td_bit_per_raw_pixel_e160": 1.6089251018366388,
+    "i_td_bit_per_raw_pixel_e20": 1.1254694412890156,
+    "i_td_bit_per_raw_pixel_e320": 1.7642039306042003,
+    "i_td_bit_per_raw_pixel_e40": 1.2933434512411264,
+    "i_td_bit_per_raw_pixel_e80": 1.4538419960330522,
+    "total_electrons_e160": 2003.346731914714,
+    "total_electrons_e20": 250.41834148933924,
+    "total_electrons_e320": 4006.693463829428,
+    "total_electrons_e40": 500.8366829786785,
+    "total_electrons_e80": 1001.673365957357
+   },
+   "design_id": "pupil_seed20260806",
+   "mask_file": "paired_control_cache/masks/pupil_seed20260806.npy",
+   "response_key": "pupil_seed20260806@r1a"
+  },
+  {
+   "arm": "plane",
+   "designed_for": "",
+   "eval_cra_deg": 2.5,
+   "eval_azimuth_deg": 22.5,
+   "evaluated_at": "r1a",
+   "seed": 20260806,
+   "i_img": 1.4334989708215553,
+   "vs_cfa": -0.4232740291784447,
+   "components": {
+    "i_td_bit_per_raw_pixel_e160": 1.6044042418387967,
+    "i_td_bit_per_raw_pixel_e20": 1.0875526861641447,
+    "i_td_bit_per_raw_pixel_e320": 1.7942529792451525,
+    "i_td_bit_per_raw_pixel_e40": 1.2551248895325158,
+    "i_td_bit_per_raw_pixel_e80": 1.426160057327166,
+    "total_electrons_e160": 1999.8311711243878,
+    "total_electrons_e20": 249.97889639054847,
+    "total_electrons_e320": 3999.6623422487755,
+    "total_electrons_e40": 499.95779278109694,
+    "total_electrons_e80": 999.9155855621939
+   },
+   "design_id": "plane_seed20260806",
+   "mask_file": "paired_control_cache/masks/plane_seed20260806.npy",
+   "response_key": "plane_seed20260806@r1a"
+  }
+ ],
+ "table": {
+  "overall": {
+   "mean_delta": 0.04183211655514951,
+   "pairs_compared": 2,
+   "pairs_won_by_pupil": 2
+  },
+  "seeds": [
+   20260805,
+   20260806
+  ],
+  "slots": {
+   "r1a": {
+    "mean_delta": 0.04183211655514951,
+    "per_seed": [
+     {
+      "delta": 0.06800641973104771,
+      "plane": 1.2934956048561184,
+      "pupil": 1.361502024587166,
+      "seed": 20260805
+     },
+     {
+      "delta": 0.015657813379251317,
+      "plane": 1.4334989708215553,
+      "pupil": 1.4491567842008066,
+      "seed": 20260806
+     }
+    ],
+    "seeds_compared": 2,
+    "seeds_won_by_pupil": 2,
+    "stdev_delta": 0.0370160545370204
+   }
+  }
+ }
+}

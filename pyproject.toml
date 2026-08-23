@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cr-itd-v2"
+version = "0.1.0"
+description = "Finite-NA pupil-ensemble forward model and imaging-information objective for colour-router inverse design"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+    { name = "Hyoseok Park" },
+    { name = "Yeonsang Park" },
+]
+dependencies = [
+    "numpy",
+    "torch",
+]
+
+[project.optional-dependencies]
+rcwa = ["torcwa"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

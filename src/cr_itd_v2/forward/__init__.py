@@ -1,0 +1,88 @@
+"""Namespaced local colour-router forward model."""
+
+from cr_itd_v2.forward.contracts import (
+    ACTIVE_WELL_ORDER,
+    DEFAULT_R1A_PUPIL,
+    DEFAULT_R1A_STACK,
+    DENSITY_AXIS_ORDER,
+    LEGACY_SOURCE_SHA256,
+    PupilRay,
+    PupilSpec,
+    RESPONSE_AXIS_ORDER,
+    RESPONSE_UNITS,
+    StackSpec,
+)
+from cr_itd_v2.forward.local_response import (
+    LocalSpectralResponse,
+    POLARIZATION_ORDER,
+    SOURCE_LOCAL_BASE_SHA256,
+    SOURCE_LOCAL_RUNNER_SHA256,
+    evaluate_local_spectral_response,
+    local_camera_pupil_response,
+)
+from cr_itd_v2.forward.materials import (
+    SOURCE_MATERIALS_SHA256,
+    SOURCE_NK_TABLE_SHA256,
+    SUPPORTED_MATERIALS,
+    permittivity,
+    refractive_index,
+    wavelength_table_nm,
+)
+from cr_itd_v2.forward.pupil import (
+    SOURCE_ILLUMINATION_SHA256,
+    pupil_quadrature,
+    relative_illumination,
+)
+from cr_itd_v2.forward.torcwa_local import (
+    SOURCE_CELL_MODEL_SHA256,
+    SOURCE_FOCUSED_NA_SHA256,
+    SolvedPlaneWave,
+    all_diffraction_orders,
+    build_permittivity,
+    detector_axes,
+    power_honest_well_powers,
+    quadrant_field_powers,
+    solve_plane_wave,
+    source_jones_ps,
+    transmitted_power,
+)
+
+
+__all__ = [
+    "ACTIVE_WELL_ORDER",
+    "DEFAULT_R1A_PUPIL",
+    "DEFAULT_R1A_STACK",
+    "DENSITY_AXIS_ORDER",
+    "LEGACY_SOURCE_SHA256",
+    "LocalSpectralResponse",
+    "POLARIZATION_ORDER",
+    "PupilRay",
+    "PupilSpec",
+    "RESPONSE_AXIS_ORDER",
+    "RESPONSE_UNITS",
+    "SOURCE_CELL_MODEL_SHA256",
+    "SOURCE_FOCUSED_NA_SHA256",
+    "SOURCE_ILLUMINATION_SHA256",
+    "SOURCE_LOCAL_BASE_SHA256",
+    "SOURCE_LOCAL_RUNNER_SHA256",
+    "SOURCE_MATERIALS_SHA256",
+    "SOURCE_NK_TABLE_SHA256",
+    "SUPPORTED_MATERIALS",
+    "SolvedPlaneWave",
+    "StackSpec",
+    "all_diffraction_orders",
+    "build_permittivity",
+    "detector_axes",
+    "evaluate_local_spectral_response",
+    "local_camera_pupil_response",
+    "permittivity",
+    "power_honest_well_powers",
+    "pupil_quadrature",
+    "quadrant_field_powers",
+    "refractive_index",
+    "relative_illumination",
+    "solve_plane_wave",
+    "source_jones_ps",
+    "transmitted_power",
+    "wavelength_table_nm",
+]
