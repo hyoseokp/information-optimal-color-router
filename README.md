@@ -15,6 +15,12 @@ linear-Gaussian channel `Y = A X + N` with target `Z` has the closed form
 reported in the paper is `I_img = I_cell / 4` (the four-site cell spans four raw
 pixels), and it is differentiable in the router geometry.
 
+![Optimization loop](docs/optimization_loop.png)
+
+*One optimizer step. This repository implements stages 02 and 03 (the
+pupil-ensemble forward model and the imaging-information objective); the
+parameterization and optimizer stages are shown for context.*
+
 ## Install
 
 ```
