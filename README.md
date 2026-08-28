@@ -1,5 +1,10 @@
 # Imaging-System-Aware Inverse Design of Information-Optimized Colour Routers
 
+![Plane-wave vs camera-pupil illumination](docs/hero_plane_cone.png)
+
+*The premise: under a camera, illumination is the finite-NA pupil cone of the
+imaging lens (right), not a single plane wave (left).*
+
 Reference implementation of the two core method components of the paper. The
 first is the forward model: a colour router placed under a camera is not
 illuminated by a single plane wave but by the finite-NA cone that the imaging
