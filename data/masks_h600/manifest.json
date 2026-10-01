@@ -1,0 +1,83 @@
+{
+ "meta": {
+  "grid": [
+   128,
+   128
+  ],
+  "dtype": "bool (True = high-index pillar material)",
+  "period_um": [
+   2.0,
+   2.0
+  ],
+  "design_material": "SiN_nk",
+  "substrate_material": "SiO2_nk",
+  "gap_um": 1.25,
+  "na": 0.3,
+  "note": "Six per-slot masks (r1a..r3c) are the deployed six-slot designs (despeckled, single-pixel islands/holes removed). champion_r1a is the deployed champion carried across the field. Seeds are the optimisation random seeds and are published intentionally."
+ },
+ "masks": [
+  {
+   "file": "masks/r1a.npy",
+   "slot": "r1a",
+   "cra_deg": 2.5,
+   "azimuth_deg": 22.5,
+   "seed": 20260909,
+   "height_um": 0.6,
+   "description": "Per-slot design optimised for field slot r1a (near on-axis ring)."
+  },
+  {
+   "file": "masks/r2a.npy",
+   "slot": "r2a",
+   "cra_deg": 10.0,
+   "azimuth_deg": 11.25,
+   "seed": 20260909,
+   "height_um": 0.6,
+   "description": "Per-slot design optimised for field slot r2a (middle ring)."
+  },
+  {
+   "file": "masks/r2b.npy",
+   "slot": "r2b",
+   "cra_deg": 10.0,
+   "azimuth_deg": 33.75,
+   "seed": 20260909,
+   "height_um": 0.6,
+   "description": "Per-slot design optimised for field slot r2b (middle ring)."
+  },
+  {
+   "file": "masks/r3a.npy",
+   "slot": "r3a",
+   "cra_deg": 20.0,
+   "azimuth_deg": 7.5,
+   "seed": 20260909,
+   "height_um": 0.6,
+   "description": "Per-slot design optimised for field slot r3a (outer ring)."
+  },
+  {
+   "file": "masks/r3b.npy",
+   "slot": "r3b",
+   "cra_deg": 20.0,
+   "azimuth_deg": 22.5,
+   "seed": 20260909,
+   "height_um": 0.6,
+   "description": "Per-slot design optimised for field slot r3b (outer ring)."
+  },
+  {
+   "file": "masks/r3c.npy",
+   "slot": "r3c",
+   "cra_deg": 20.0,
+   "azimuth_deg": 37.5,
+   "seed": 20260909,
+   "height_um": 0.6,
+   "description": "Per-slot design optimised for field slot r3c (outer ring)."
+  },
+  {
+   "file": "masks/champion_r1a.npy",
+   "slot": "r1a",
+   "cra_deg": 2.5,
+   "azimuth_deg": 22.5,
+   "seed": 20260908,
+   "height_um": 0.6,
+   "description": "Champion single design (on-axis r1a chief ray, 8-ray pupil ensemble) carried across the full field; the headline pupil-ensemble router of the paper."
+  }
+ ]
+}

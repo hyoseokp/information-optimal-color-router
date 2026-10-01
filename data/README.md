@@ -13,10 +13,15 @@ and height.
 
 | file | role | figure |
 |------|------|--------|
-| `r1a.npy` .. `r3c.npy` | six per-slot deployed designs | six-slot / sector figures |
-| `champion_r1a.npy` | champion pupil-ensemble router carried across the field | main router figures |
+| `r1a.npy` .. `r3c.npy` | six per-slot designs, 800 nm height; `r1a` is the seed-22 optimisation result and is also the champion carried across the field | six-slot / sector figures, main router figures |
+
+`masks_h600/` holds the 600 nm designs of the earlier version (with their own
+`manifest.json`), kept because the caches below were generated from them.
 
 ## `caches/`
+
+The caches below were generated from the 600 nm designs in `masks_h600/` and
+have not been regenerated for the 800 nm masks.
 
 - `six_slot_spectra.npz` / `six_slot_table.json` — per-slot (well, wavelength)
   responses and the summary table for the six-slot figure.

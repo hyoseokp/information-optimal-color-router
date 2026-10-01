@@ -13,7 +13,9 @@
   "substrate_material": "SiO2_nk",
   "gap_um": 1.25,
   "na": 0.3,
-  "note": "Six per-slot masks (r1a..r3c) are the deployed six-slot designs (despeckled, single-pixel islands/holes removed). champion_r1a is the deployed champion carried across the field. Seeds are the optimisation random seeds and are published intentionally."
+  "height_um": 0.8,
+  "champion": "r1a",
+  "note": "h800 designs of the revised paper. r1a is the seed-22 optimisation result and is the champion carried across the field; r2a..r3c are warm-started from its latent. i_img_16ray_bits is the paper's 16-ray complex64 reference-forward score. The h600 designs of the earlier version are in masks_h600/."
  },
  "masks": [
   {
@@ -21,63 +23,66 @@
    "slot": "r1a",
    "cra_deg": 2.5,
    "azimuth_deg": 22.5,
-   "seed": 20260909,
-   "height_um": 0.6,
-   "description": "Per-slot design optimised for field slot r1a (near on-axis ring)."
+   "seed": 22,
+   "start": "random (seed 22 optimisation)",
+   "height_um": 0.8,
+   "i_img_16ray_bits": 1.8771,
+   "description": "Per-slot design for field slot r1a (near on-axis ring; also the champion single design carried across the field)."
   },
   {
    "file": "masks/r2a.npy",
    "slot": "r2a",
    "cra_deg": 10.0,
    "azimuth_deg": 11.25,
-   "seed": 20260909,
-   "height_um": 0.6,
-   "description": "Per-slot design optimised for field slot r2a (middle ring)."
+   "seed": 22,
+   "start": "warm start from the seed-22 latent (slot r1a)",
+   "height_um": 0.8,
+   "i_img_16ray_bits": 1.8243,
+   "description": "Per-slot design for field slot r2a (middle ring)."
   },
   {
    "file": "masks/r2b.npy",
    "slot": "r2b",
    "cra_deg": 10.0,
    "azimuth_deg": 33.75,
-   "seed": 20260909,
-   "height_um": 0.6,
-   "description": "Per-slot design optimised for field slot r2b (middle ring)."
+   "seed": 22,
+   "start": "warm start from the seed-22 latent (slot r1a)",
+   "height_um": 0.8,
+   "i_img_16ray_bits": 1.7691,
+   "description": "Per-slot design for field slot r2b (middle ring)."
   },
   {
    "file": "masks/r3a.npy",
    "slot": "r3a",
    "cra_deg": 20.0,
    "azimuth_deg": 7.5,
-   "seed": 20260909,
-   "height_um": 0.6,
-   "description": "Per-slot design optimised for field slot r3a (outer ring)."
+   "seed": 22,
+   "start": "warm start from the seed-22 latent (slot r1a)",
+   "height_um": 0.8,
+   "i_img_16ray_bits": 1.6766,
+   "description": "Per-slot design for field slot r3a (outer ring)."
   },
   {
    "file": "masks/r3b.npy",
    "slot": "r3b",
    "cra_deg": 20.0,
    "azimuth_deg": 22.5,
-   "seed": 20260909,
-   "height_um": 0.6,
-   "description": "Per-slot design optimised for field slot r3b (outer ring)."
+   "seed": 22,
+   "start": "warm start from the seed-22 latent (slot r1a)",
+   "height_um": 0.8,
+   "i_img_16ray_bits": 1.6825,
+   "description": "Per-slot design for field slot r3b (outer ring)."
   },
   {
    "file": "masks/r3c.npy",
    "slot": "r3c",
    "cra_deg": 20.0,
    "azimuth_deg": 37.5,
-   "seed": 20260909,
-   "height_um": 0.6,
-   "description": "Per-slot design optimised for field slot r3c (outer ring)."
-  },
-  {
-   "file": "masks/champion_r1a.npy",
-   "slot": "r1a",
-   "cra_deg": 2.5,
-   "azimuth_deg": 22.5,
-   "seed": 20260908,
-   "height_um": 0.6,
-   "description": "Champion single design (on-axis r1a chief ray, 8-ray pupil ensemble) carried across the full field; the headline pupil-ensemble router of the paper."
+   "seed": 22,
+   "start": "warm start from the seed-22 latent (slot r1a)",
+   "height_um": 0.8,
+   "i_img_16ray_bits": 1.7009,
+   "description": "Per-slot design for field slot r3c (outer ring)."
   }
  ]
 }

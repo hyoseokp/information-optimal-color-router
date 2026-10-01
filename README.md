@@ -50,11 +50,42 @@ objective on synthetic covariances. It is a reference demonstration on
 synthetic inputs, not a reproduction of the paper's reported numbers, and it
 runs on CPU without an RCWA solver.
 
+## Fast forward (`crfast`)
+
+`src/crfast/` is a batched rewrite of the RCWA forward used inside the optimiser
+loop. It evaluates the same physics as `cr_itd_v2.forward.local_response` with
+torcwa 0.1.4.2 but restructures the algebra: the two polarisations share one
+structure solve (288 to 144 eigendecompositions per 16-ray score), the
+permittivity-convolution inverse is shared across rays, the input/output
+S-matrices are handled as blocks of diagonals, the 4N x 4N mode-coupling inverse
+is split into two 2N inverses, and the detector field is synthesised
+separably. Reported scores are always taken from the reference forward.
+
+```python
+from crfast.forward import FastPupilForward
+fwd = FastPupilForward(stack=stack, pupil_spec=pupil, wavelengths_nm=wls, device=device)
+tabs = fwd.response(density)        # Tabs[well, wavelength]
+```
+
+On an RTX 3060 a 16-ray value-and-gradient step takes about 33 s against about
+108 s for the reference path; the eigendecomposition is about 90 % of the step.
+Parity with the reference is checked by `tests/test_crfast_parity.py`
+(CPU, complex128, 2 wavelengths x 2 rays: response agrees to about 4e-6
+relative, gradient cosine 1.0000):
+
+```
+pip install -e ".[rcwa]" pytest
+pytest tests/test_crfast_parity.py
+```
+
+The optimiser, the warm-start schedule and the full-size parity/determinism
+tests are not part of this repository.
+
 ## Scope
 
 This repository is a reference implementation of the core method: the
 finite-NA pupil-ensemble forward model and the imaging-information objective.
-The deployed design masks and the derived response caches used for the figures
+The deployed design masks (800 nm) and the derived response caches used for the figures
 are included under `data/`. The full evaluation pipeline and the optimizer are
 available from the corresponding author on reasonable request.
 
