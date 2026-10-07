@@ -182,6 +182,10 @@ def main():
     ap.add_argument("--smin", type=int, default=5)
     ap.add_argument("--lr", type=float, default=0.05)
     ap.add_argument("--lrbeta", type=float, default=0.4)
+    ap.add_argument("--lr-ramp-steps", type=int, default=0, help="if >0: from the launch step, lr rises geometrically from the beta-rule value to --lr over this many steps (beta rule no longer caps lr)")
+    ap.add_argument("--gray-pen", type=float, default=0.0, help="max weight lam of the grayness penalty J - lam*mean(4 rho (1-rho)); ramped linearly from the launch step over --gray-ramp steps")
+    ap.add_argument("--gray-ramp", type=int, default=40)
+    ap.add_argument("--adam-restart", action="store_true", help="Adam bias correction counts steps since launch (use after resetting m, v)")
     ap.add_argument("--lr-h", type=float, default=1.0, help="height in um used in the lr rule (total stack height)")
     ap.add_argument("--warm-steps", type=int, default=3)
     ap.add_argument("--noise", type=float, default=0.15)
@@ -220,6 +224,7 @@ def main():
     L = args.layers
     h_um = args.h
 
+    lr_ramp0 = None
     st_path = out / "state.pt"
     if st_path.exists():
         st = torch.load(st_path, map_location=dev)
@@ -262,14 +267,19 @@ def main():
         hI = [h_["F_grey"] for h_ in hist if h_["step"] >= last]
         brk = False
         if k > 0:
-            if (k - last) >= args.smin and len(hI) >= 11 and (hI[-1] - hI[-11]) < 0.0005 * abs(hI[-11]) and beta < args.betamax:
+            rise_ok = len(hI) >= 11 and (hI[-1] - hI[-11]) < 0.0005 * abs(hI[-11])
+            gap = (hist[-1]["F_grey"] - hist[-1]["F_bin"]) / abs(hist[-1]["F_grey"]) if hist[-1]["F_bin"] is not None else None
+            if rise_ok and gap is not None and gap <= 0.001:
+                print(f"[stop] step {k}: 10-step grey rise < 0.05 % and gap {100 * gap:.3f} % <= 0.1 % (bin step {hist[-1]['step']}), beta {beta:g}", flush=True)
+                break
+            sat3 = len(hI) >= 4 and -0.01 * abs(hI[-4]) < (hI[-1] - hI[-4]) < 0.005 * abs(hI[-4])
+            if (k - last) >= args.smin and sat3 and beta < args.betamax:
                 beta = min(beta * args.bstep, args.betamax)
                 last_new = k
-                print(f"[bstep] step {k}: grey saturated (10-step {hI[-11]:.5f}->{hI[-1]:.5f}), beta -> {beta:g}", flush=True)
+                print(f"[bstep] step {k}: grey saturated (3-step {hI[-4]:.5f}->{hI[-1]:.5f}, {100 * (hI[-1] - hI[-4]) / abs(hI[-4]):.3f} % < 0.5 %), beta -> {beta:g}", flush=True)
                 last = last_new
-            elif beta >= args.betamax and (k - last) >= 10 and len(hI) >= 11 and (hI[-1] - hI[-11]) < 0.0005 * abs(hI[-11]):
-                print(f"[bstep] step {k}: beta max (1024), 10-step gain {hI[-11]:.5f}->{hI[-1]:.5f} < 0.05 %, stop", flush=True)
-                break
+            elif rise_ok and beta >= args.betamax and (k - last) % 10 == 0:
+                print(f"[bmax] step {k}: beta {beta:g}, saturated but gap {'n/a' if gap is None else format(100 * gap, '.3f') + ' %'} > 0.1 %, continuing", flush=True)
         beta_changed = bool(hist) and abs(hist[-1]["beta"] - beta) > 1e-12
         do_bin = (k % args.bineval == 0) or beta_changed
 
@@ -277,13 +287,15 @@ def main():
         rs = rhos_of(th, beta)
         dens = gate_grey(rs, args.reach)
         tabs, obj, Fg, info_g = tabs_i(dens, True)
-        obj.backward()
+        lam = args.gray_pen * min(1.0, (k - k0) / args.gray_ramp)
+        P = (4.0 * torch.stack(rs) * (1.0 - torch.stack(rs))).mean()
+        (obj - lam * P).backward()
         g = th.grad.detach()
         ct_g = crosstalk(tabs.detach().cpu().numpy())
         t_fb = time.time() - t0
 
         rec = dict(step=k, J_grey=float(obj), F_grey=float(Fg), info_grey=info_g, I_img_grey=info_g["I_img"], F_bin=None, info_bin=None, I_img_bin=None, best_bin=best_bin, beta=beta, ct_grey=ct_g, ct_bin=None,
-                   unsupported_bin=None, t_fb=t_fb)
+                   unsupported_bin=None, t_fb=t_fb, gray_P=float(P), gray_lam=lam)
         if do_bin:
             with torch.no_grad():
                 bstack = gate_binary([r.detach() for r in rs], args.reach)
@@ -302,11 +314,16 @@ def main():
                                 tabs=tb.cpu().numpy(), F_bin=rec["F_bin"], I_img_bin=rec["I_img_bin"], step=k, beta=beta)
 
         lr = min(args.lr, (args.lrbeta / args.lr_h) / beta) * min(1.0, (k + 1) / args.warm_steps)
+        if args.lr_ramp_steps > 0:
+            if lr_ramp0 is None:
+                lr_ramp0 = (k, lr)
+            lr = lr_ramp0[1] * (args.lr / lr_ramp0[1]) ** min(1.0, (k - lr_ramp0[0]) / args.lr_ramp_steps)
         with torch.no_grad():
             m = torch.where(m * g < 0, torch.zeros_like(m), m)
             m = 0.9 * m + 0.1 * g
             v = 0.999 * v + 0.001 * g ** 2
-            theta = (theta + lr * (m / (1 - 0.9 ** (k + 1))) / ((v / (1 - 0.999 ** (k + 1))).sqrt() + 1e-12)).clamp(0, 1)
+            ta = (k - k0 + 1) if args.adam_restart else (k + 1)
+            theta = (theta + lr * (m / (1 - 0.9 ** ta)) / ((v / (1 - 0.999 ** ta)).sqrt() + 1e-12)).clamp(0, 1)
         rec.update(lr=lr, t_step=time.time() - t0)
         hist.append(rec)
         np.savez_compressed(out / "steps" / f"theta_{k:04d}.npz", theta=theta.cpu().numpy().astype(np.float32),
@@ -317,9 +334,10 @@ def main():
         tmp.replace(st_path)
         ib = f"{rec['F_bin']:.5f}" if rec["F_bin"] is not None else "-"
         pk, pu = info_g["peak"], info_g["purity"]
-        print(f"step {k:3d} F(grey) {rec['F_grey']:.5f} J {rec['J_grey']:.4f} bin {ib} beta {beta:.3g} lr {lr:.4f} "
+        gp = f"{100 * (rec['F_grey'] - rec['F_bin']) / abs(rec['F_grey']):.2f}" if rec["F_bin"] is not None else "-"
+        print(f"step {k:3d} F(grey) {rec['F_grey']:.5f} J {rec['J_grey']:.4f} bin {ib} gap% {gp} beta {beta:.3g} lr {lr:.4f} "
               f"pk R{pk['R']:.3f} G{pk['G']:.3f} B{pk['B']:.3f} pu R{pu['R']:.3f} G{pu['G']:.3f} B{pu['B']:.3f} "
-              f"Cx {ct_g['C_mean']:.3f} Iimg {rec['I_img_grey']:.4f} sym {info_g['sym_err']:.1e} unsup {rec['unsupported_bin']} fb {t_fb:.0f}s step {rec['t_step']:.0f}s", flush=True)
+              f"Cx {ct_g['C_mean']:.3f} Iimg {rec['I_img_grey']:.4f} sym {info_g['sym_err']:.1e} unsup {rec['unsupported_bin']} fb {t_fb:.0f}s step {rec['t_step']:.0f}s P {rec['gray_P']:.4f} lam {rec['gray_lam']:.2f}", flush=True)
     print("[run] done", flush=True)
 
 

@@ -10,8 +10,9 @@ Inverse design of a 2 um x 2 um colour-router cell made of independently pattern
   binary: exact dilation, checked independently with `torch.roll`), so no floating structures. Layer 0 rests on the glass.
 - `examples/voxel3d/run_classic.py` and `run_classic10nm.py`: peak x purity objective per colour band (bands 420/450/470, 510/540/570,
   600/635/670 nm), diagonal (x<->y) symmetry. `run_classic10nm.py` is the 10 nm-layer variant (single normal ray by default,
-  3D Gaussian control filter, `lr = min(lr, (lrbeta / lr-h) / beta)`, beta advanced when the grey figure of merit rises by less
-  than a threshold over 10 steps).
+  3D Gaussian control filter, `lr = min(lr, (lrbeta / lr-h) / beta)`; beta is multiplied by `--bstep` when the 3-step change of the
+  grey figure of merit is saturated (between -1 % and +0.5 %), at least `--smin` steps after the previous advance, up to `--betamax`;
+  the run stops when the 10-step grey rise is below 0.05 % and the grey-to-binary gap at the same step is at most 0.1 %).
 - `examples/voxel3d/run_voxel.py`: imaging-information (`I_img`) objective. It needs the matched-context module
   `cr_itd_v2.optimization`, which is not part of this repository.
 - `examples/voxel3d/test_voxel_parity.py`: CPU parity of the multilayer forward against the reference `torcwa` forward
@@ -36,6 +37,8 @@ python examples/voxel3d/run_classic10nm.py --out runs/cls10nm --layers 100 --h 0
 ```
 
 Key options: `--layers`, `--h` (layer height, um), `--gap-um`, `--rays`, `--sigma-nm`, `--beta0`, `--betamax`, `--bstep`,
-`--lr`, `--lrbeta`, `--lr-h`, `--bineval` (binary evaluation interval), `--chunk` (layers per backward chunk), `--init-state`.
+`--lr`, `--lrbeta`, `--lr-h`, `--bineval` (binary evaluation interval), `--chunk` (layers per backward chunk), `--init-state`,
+`--lr-ramp-steps` (geometric lr ramp from the beta-rule value to `--lr`), `--gray-pen` / `--gray-ramp` (grayness penalty
+`lam * mean(4 rho (1 - rho))` and its linear ramp), `--adam-restart` (Adam bias correction from the launch step).
 Each step writes `steps/*.npz` and `history.json`; `state.pt` allows resuming (rerun the same command). Create `<out>/STOP` to
 stop cleanly.
