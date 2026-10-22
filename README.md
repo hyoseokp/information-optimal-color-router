@@ -85,7 +85,7 @@ tests are not part of this repository.
 
 This repository is a reference implementation of the core method: the
 finite-NA pupil-ensemble forward model and the imaging-information objective.
-The deployed design masks (800 nm) and the derived response caches used for the figures
+The design masks M1-M6 (800 nm) and the source data of the main-text figures
 are included under `data/`. The full evaluation pipeline and the optimizer are
 available from the corresponding author on reasonable request.
 

@@ -15,7 +15,7 @@
   "na": 0.3,
   "height_um": 0.8,
   "champion": "r1a",
-  "note": "h800 designs of the revised paper. r1a is the seed-22 optimisation result and is the champion carried across the field; r2a..r3c are warm-started from its latent. i_img_16ray_bits is the paper's 16-ray complex64 reference-forward score. The h600 designs of the earlier version are in masks_h600/."
+  "note": "800-nm designs of the paper (M1-M6 = r1a, r2a, r2b, r3a, r3b, r3c). r1a is the seed-22 optimisation result; r2a..r3c are optimised at their own sector centres starting from a partly optimised stage of r1a. i_img_16ray_bits is the paper's 16-ray reference-forward score."
  },
  "masks": [
   {
@@ -27,7 +27,8 @@
    "start": "random (seed 22 optimisation)",
    "height_um": 0.8,
    "i_img_16ray_bits": 1.8771,
-   "description": "Per-slot design for field slot r1a (near on-axis ring; also the champion single design carried across the field)."
+   "description": "Per-slot design for field slot r1a (near on-axis ring; also the champion single design carried across the field).",
+   "design": "M1"
   },
   {
    "file": "masks/r2a.npy",
@@ -38,7 +39,8 @@
    "start": "warm start from the seed-22 latent (slot r1a)",
    "height_um": 0.8,
    "i_img_16ray_bits": 1.8243,
-   "description": "Per-slot design for field slot r2a (middle ring)."
+   "description": "Per-slot design for field slot r2a (middle ring).",
+   "design": "M2"
   },
   {
    "file": "masks/r2b.npy",
@@ -46,10 +48,11 @@
    "cra_deg": 10.0,
    "azimuth_deg": 33.75,
    "seed": 22,
-   "start": "warm start from the seed-22 latent (slot r1a)",
+   "start": "warm start from a partly optimised stage of the seed-22 optimisation (slot r1a)",
    "height_um": 0.8,
-   "i_img_16ray_bits": 1.7691,
-   "description": "Per-slot design for field slot r2b (middle ring)."
+   "i_img_16ray_bits": 1.8111,
+   "description": "Per-slot design for field slot r2b (middle ring).",
+   "design": "M3"
   },
   {
    "file": "masks/r3a.npy",
@@ -59,8 +62,9 @@
    "seed": 22,
    "start": "warm start from the seed-22 latent (slot r1a)",
    "height_um": 0.8,
-   "i_img_16ray_bits": 1.6766,
-   "description": "Per-slot design for field slot r3a (outer ring)."
+   "i_img_16ray_bits": 1.6767,
+   "description": "Per-slot design for field slot r3a (outer ring).",
+   "design": "M4"
   },
   {
    "file": "masks/r3b.npy",
@@ -71,7 +75,8 @@
    "start": "warm start from the seed-22 latent (slot r1a)",
    "height_um": 0.8,
    "i_img_16ray_bits": 1.6825,
-   "description": "Per-slot design for field slot r3b (outer ring)."
+   "description": "Per-slot design for field slot r3b (outer ring).",
+   "design": "M5"
   },
   {
    "file": "masks/r3c.npy",
@@ -82,7 +87,8 @@
    "start": "warm start from the seed-22 latent (slot r1a)",
    "height_um": 0.8,
    "i_img_16ray_bits": 1.7009,
-   "description": "Per-slot design for field slot r3c (outer ring)."
+   "description": "Per-slot design for field slot r3c (outer ring).",
+   "design": "M6"
   }
  ]
 }

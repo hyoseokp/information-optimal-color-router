@@ -1,41 +1,31 @@
-# Figure-reproduction data
+# Data
 
-This directory holds the final design masks and the derived response caches
-needed to reproduce the figures in the paper. Nothing here requires an RCWA
-solve to read; every published number is recomputable from the cached arrays.
+Design masks and the source data of the main-text figures.
 
 ## `masks/`
 
-Boolean design masks on a 128 x 128 grid over a 2.0 x 2.0 um period
-(`True` = high-index pillar material, SiN on an SiO2 substrate). See
-`manifest.json` for each mask's field slot, chief-ray angle/azimuth, seed,
-and height.
+Boolean design masks on a 128 x 128 grid over a 2.0 x 2.0 um period (`True` = SiN pillar, 800 nm tall, on SiO2).
+`manifest.json` gives each mask's design name, field sector (chief-ray angle and azimuth) and imaging information.
 
-| file | role | figure |
-|------|------|--------|
-| `r1a.npy` .. `r3c.npy` | six per-slot designs, 800 nm height; `r1a` is the seed-22 optimisation result and is also the champion carried across the field | six-slot / sector figures, main router figures |
+| file | design | chief-ray angle, azimuth |
+|------|--------|--------------------------|
+| `r1a.npy` | M1 | 2.5°, 22.5° |
+| `r2a.npy` | M2 | 10°, 11.25° |
+| `r2b.npy` | M3 | 10°, 33.75° |
+| `r3a.npy` | M4 | 20°, 7.5° |
+| `r3b.npy` | M5 | 20°, 22.5° |
+| `r3c.npy` | M6 | 20°, 37.5° |
 
-`masks_h600/` holds the 600 nm designs of the earlier version (with their own
-`manifest.json`), kept because the caches below were generated from them.
+## `source/`
 
-## `caches/`
+Plotted values of the main-text figures. Each JSON file starts with a `description` field.
 
-The caches below were generated from the 600 nm designs in `masks_h600/` and
-have not been regenerated for the 800 nm masks.
+| file | figure |
+|------|--------|
+| `fig1c_designs.json` | Fig. 1c (and the Supplementary low-light figure): imaging information of the plane-wave-optimized and pupil-optimized designs, M1 and the four literature routers |
+| `fig2_sectors.json` | Fig. 2: imaging information at the six sector centers, area-weighted values, site responses |
+| `fig3_crossover.json` | Fig. 3: information difference to the CFA against the green-site SNR, crossovers, read-noise dependence |
+| `fig4_purity.json` | Fig. 4: purity and throughput of M1 over the pupil directions |
+| `fig5_measured.json` | Fig. 5d,e and Fig. 1e: site fractions and information difference of the fabricated M1, measured and simulated |
 
-- `six_slot_spectra.npz` / `six_slot_table.json` — per-slot (well, wavelength)
-  responses and the summary table for the six-slot figure.
-- `imaging_demo_cache.npz` — ground-truth and reconstructed image panels with
-  PSNR for the imaging demonstration.
-- `field_map.npz` — router vs. filter-array score over the (theta, phi) field grid.
-- `fig1_crossover.npz` — SNR sweep with the CR/CFA crossover point (Fig. 3).
-- `spatial_kernel_r1a.npz`, `_r2a.npz`, `_r3b.npz` — per-slot spatial kernels,
-  MTF/LSF/ESF and spill matrices.
-- `cold_pair_table.json` + `paired_control_cache/` — the paired
-  pupil-vs-plane control comparison (two seeds). `responses.npz` keys are
-  `<design_id>@<slot>`; `masks/<design_id>.npy` is the design each row scored.
-  Design ids are `pupil_seed<seed>` / `plane_seed<seed>`.
-
-Response array axes: rows are wells in the order given by `__well_order__`
-(R, G2, G1, B); columns are wavelengths in nm
-(420, 450, 470, 510, 540, 570, 600, 635, 670).
+Imaging information is in bit per raw pixel. Sites q1-q4 follow the labels of the figures.

@@ -6,3 +6,7 @@ dist/
 .venv/
 .pytest_cache/
 .mypy_cache/
+
+# kept locally, not published
+src/voxel3d/
+examples/voxel3d/
