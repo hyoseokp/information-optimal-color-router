@@ -1,12 +1,12 @@
 {
- "description": "Main-text Fig. 2: I_img (bit per raw pixel, 16-ray pupil, (8,8)) at the six sector centres for the CFA, the mask designed for that sector and M1 used unchanged; area-weighted values over the field; site responses (fraction of the incident power reaching sites q1-q4) and throughput T of each mask at its sector centre.",
+ "description": "Main-text Fig. 2: I_img (bit per raw pixel, 16-ray pupil, (8,8), exposure-ladder average) at the six sector centres for the CFA, the mask designed for that sector and M1 used unchanged; area-weighted values over the field; site responses (fraction of the incident power reaching sites q1-q4) and throughput T of each mask at its sector centre. Scene illuminance in lux: an 18% grey scene imaged at f/1.8 (lens transmission 0.9), 1/30 s, 3000 K blackbody, one exposure per point, read noise 1.5 e- rms; one lux puts 1.07 e- into the on-axis green site of the CFA. CFA = measured spectral sensitivities of a smartphone image sensor, green peak scaled to 0.90.",
  "sectors": [
   {
    "design": "M1",
    "cra_deg": 2.5,
    "azimuth_deg": 22.5,
    "area_weight": 0.04,
-   "cfa": 1.84733,
+   "cfa": 1.82157,
    "sector_design": 1.87712,
    "M1_unchanged": 1.87712,
    "fill_fraction": 0.2595
@@ -16,7 +16,7 @@
    "cra_deg": 10.0,
    "azimuth_deg": 11.25,
    "area_weight": 0.16,
-   "cfa": 1.82362,
+   "cfa": 1.79588,
    "sector_design": 1.82425,
    "M1_unchanged": 1.78168,
    "fill_fraction": 0.2757
@@ -26,7 +26,7 @@
    "cra_deg": 10.0,
    "azimuth_deg": 33.75,
    "area_weight": 0.16,
-   "cfa": 1.82362,
+   "cfa": 1.79588,
    "sector_design": 1.81108,
    "M1_unchanged": 1.78716,
    "fill_fraction": 0.265
@@ -36,7 +36,7 @@
    "cra_deg": 20.0,
    "azimuth_deg": 7.5,
    "area_weight": 0.21333333333333335,
-   "cfa": 1.74559,
+   "cfa": 1.71175,
    "sector_design": 1.67656,
    "M1_unchanged": 1.48429,
    "fill_fraction": 0.2777
@@ -46,7 +46,7 @@
    "cra_deg": 20.0,
    "azimuth_deg": 22.5,
    "area_weight": 0.21333333333333335,
-   "cfa": 1.74559,
+   "cfa": 1.71175,
    "sector_design": 1.68251,
    "M1_unchanged": 1.47141,
    "fill_fraction": 0.2899
@@ -56,14 +56,14 @@
    "cra_deg": 20.0,
    "azimuth_deg": 37.5,
    "area_weight": 0.21333333333333335,
-   "cfa": 1.74559,
+   "cfa": 1.71175,
    "sector_design": 1.70087,
    "M1_unchanged": 1.46649,
    "fill_fraction": 0.267
   }
  ],
  "area_weighted": {
-  "cfa": 1.77463,
+  "cfa": 1.74306,
   "M1_unchanged": 1.5895,
   "sector_designs": 1.73619
  },

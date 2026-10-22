@@ -1,1412 +1,1039 @@
 {
- "description": "Imaging information I_img (bit per raw pixel) of each design under a normal plane wave and under the on-axis imaging-system pupil, averaged over the exposure ladder (13-25 dB; main-text Fig. 1c) and at a green-site SNR of 10 dB (Supplementary low-light figure). layer_height_um / gap_um: router layer and router-to-detector gap.",
- "cfa": {
-  "ladder": 1.84733,
-  "snr_10dB": 1.02881
- },
+ "description": "Main-text Fig. 1c: imaging information I_img (bit per raw pixel) of each design under a normal plane wave and under the on-axis imaging-system pupil, averaged over the five-level exposure ladder of the design objective (about 23 to 365 lux). layer_height_um / gap_um: router layer and router-to-detector gap. Scene illuminance in lux: an 18% grey scene imaged at f/1.8 (lens transmission 0.9), 1/30 s, 3000 K blackbody, one exposure per point, read noise 1.5 e- rms; one lux puts 1.07 e- into the on-axis green site of the CFA. CFA = measured spectral sensitivities of a smartphone image sensor, green peak scaled to 0.90.",
+ "cfa": 1.82157,
  "plane_wave_optimized": [
   {
-   "plane_wave_ladder": 1.70335,
-   "pupil_ladder": 1.38962,
-   "plane_wave_10dB": 1.07983,
-   "pupil_10dB": 0.93534,
+   "plane_wave": 1.70335,
+   "pupil": 1.38962,
    "layer_height_um": 1.0,
    "gap_um": 1.25
   },
   {
-   "plane_wave_ladder": 1.54312,
-   "pupil_ladder": 1.2002,
-   "plane_wave_10dB": 0.98652,
-   "pupil_10dB": 0.87086,
+   "plane_wave": 1.54312,
+   "pupil": 1.2002,
    "layer_height_um": 1.0,
    "gap_um": 1.25
   },
   {
-   "plane_wave_ladder": 1.40934,
-   "pupil_ladder": 1.1905,
-   "plane_wave_10dB": 0.94367,
-   "pupil_10dB": 0.87641,
+   "plane_wave": 1.40934,
+   "pupil": 1.1905,
    "layer_height_um": 1.0,
    "gap_um": 0.25
   },
   {
-   "plane_wave_ladder": 1.41165,
-   "pupil_ladder": 1.24795,
-   "plane_wave_10dB": 0.95449,
-   "pupil_10dB": 0.89407,
+   "plane_wave": 1.41165,
+   "pupil": 1.24795,
    "layer_height_um": 1.0,
    "gap_um": 0.25
   },
   {
-   "plane_wave_ladder": 1.64645,
-   "pupil_ladder": 1.20716,
-   "plane_wave_10dB": 1.05211,
-   "pupil_10dB": 0.87341,
+   "plane_wave": 1.64645,
+   "pupil": 1.20716,
    "layer_height_um": 1.0,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.38922,
-   "pupil_ladder": 1.18748,
-   "plane_wave_10dB": 0.94312,
-   "pupil_10dB": 0.87737,
+   "plane_wave": 1.38922,
+   "pupil": 1.18748,
    "layer_height_um": 1.0,
    "gap_um": 0.5
   },
   {
-   "plane_wave_ladder": 1.47669,
-   "pupil_ladder": 1.14706,
-   "plane_wave_10dB": 0.96466,
-   "pupil_10dB": 0.8634,
+   "plane_wave": 1.47669,
+   "pupil": 1.14706,
    "layer_height_um": 1.0,
    "gap_um": 0.5
   },
   {
-   "plane_wave_ladder": 1.59684,
-   "pupil_ladder": 1.38542,
-   "plane_wave_10dB": 1.05145,
-   "pupil_10dB": 0.95322,
+   "plane_wave": 1.59684,
+   "pupil": 1.38542,
    "layer_height_um": 0.6,
    "gap_um": 1.25
   },
   {
-   "plane_wave_ladder": 1.49464,
-   "pupil_ladder": 1.21207,
-   "plane_wave_10dB": 1.00103,
-   "pupil_10dB": 0.88312,
+   "plane_wave": 1.49464,
+   "pupil": 1.21207,
    "layer_height_um": 0.6,
    "gap_um": 1.25
   },
   {
-   "plane_wave_ladder": 1.29356,
-   "pupil_ladder": 1.14476,
-   "plane_wave_10dB": 0.90971,
-   "pupil_10dB": 0.86454,
+   "plane_wave": 1.29356,
+   "pupil": 1.14476,
    "layer_height_um": 0.6,
    "gap_um": 0.25
   },
   {
-   "plane_wave_ladder": 1.73827,
-   "pupil_ladder": 1.34821,
-   "plane_wave_10dB": 1.1152,
-   "pupil_10dB": 0.92274,
+   "plane_wave": 1.73827,
+   "pupil": 1.34821,
    "layer_height_um": 0.6,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.6554,
-   "pupil_ladder": 1.19081,
-   "plane_wave_10dB": 1.06458,
-   "pupil_10dB": 0.8779,
+   "plane_wave": 1.6554,
+   "pupil": 1.19081,
    "layer_height_um": 0.6,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.3627,
-   "pupil_ladder": 1.21324,
-   "plane_wave_10dB": 0.93297,
-   "pupil_10dB": 0.8834,
+   "plane_wave": 1.3627,
+   "pupil": 1.21324,
    "layer_height_um": 0.6,
    "gap_um": 0.5
   },
   {
-   "plane_wave_ladder": 1.38649,
-   "pupil_ladder": 1.18374,
-   "plane_wave_10dB": 0.93764,
-   "pupil_10dB": 0.8739,
+   "plane_wave": 1.38649,
+   "pupil": 1.18374,
    "layer_height_um": 0.6,
    "gap_um": 0.5
   },
   {
-   "plane_wave_ladder": 1.62695,
-   "pupil_ladder": 1.37666,
-   "plane_wave_10dB": 1.0599,
-   "pupil_10dB": 0.93782,
+   "plane_wave": 1.62695,
+   "pupil": 1.37666,
    "layer_height_um": 0.7,
    "gap_um": 1.25
   },
   {
-   "plane_wave_ladder": 1.38168,
-   "pupil_ladder": 1.23568,
-   "plane_wave_10dB": 0.95143,
-   "pupil_10dB": 0.89093,
+   "plane_wave": 1.38168,
+   "pupil": 1.23568,
    "layer_height_um": 0.7,
    "gap_um": 0.25
   },
   {
-   "plane_wave_ladder": 1.36501,
-   "pupil_ladder": 1.28477,
-   "plane_wave_10dB": 0.95535,
-   "pupil_10dB": 0.91219,
+   "plane_wave": 1.36501,
+   "pupil": 1.28477,
    "layer_height_um": 0.7,
    "gap_um": 0.25
   },
   {
-   "plane_wave_ladder": 1.69356,
-   "pupil_ladder": 1.33329,
-   "plane_wave_10dB": 1.099,
-   "pupil_10dB": 0.91652,
+   "plane_wave": 1.69356,
+   "pupil": 1.33329,
    "layer_height_um": 0.7,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.51593,
-   "pupil_ladder": 1.13993,
-   "plane_wave_10dB": 0.98021,
-   "pupil_10dB": 0.86216,
+   "plane_wave": 1.51593,
+   "pupil": 1.13993,
    "layer_height_um": 0.7,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.48546,
-   "pupil_ladder": 1.27489,
-   "plane_wave_10dB": 0.97091,
-   "pupil_10dB": 0.8962,
+   "plane_wave": 1.48546,
+   "pupil": 1.27489,
    "layer_height_um": 0.7,
    "gap_um": 0.5
   },
   {
-   "plane_wave_ladder": 1.59976,
-   "pupil_ladder": 1.31663,
-   "plane_wave_10dB": 1.04854,
-   "pupil_10dB": 0.91285,
+   "plane_wave": 1.59976,
+   "pupil": 1.31663,
    "layer_height_um": 0.8,
    "gap_um": 1.25
   },
   {
-   "plane_wave_ladder": 1.5462,
-   "pupil_ladder": 1.1753,
-   "plane_wave_10dB": 1.01902,
-   "pupil_10dB": 0.871,
+   "plane_wave": 1.5462,
+   "pupil": 1.1753,
    "layer_height_um": 0.8,
    "gap_um": 1.25
   },
   {
-   "plane_wave_ladder": 1.37276,
-   "pupil_ladder": 1.26553,
-   "plane_wave_10dB": 0.94463,
-   "pupil_10dB": 0.90071,
+   "plane_wave": 1.37276,
+   "pupil": 1.26553,
    "layer_height_um": 0.8,
    "gap_um": 0.25
   },
   {
-   "plane_wave_ladder": 1.30006,
-   "pupil_ladder": 1.18373,
-   "plane_wave_10dB": 0.9066,
-   "pupil_10dB": 0.87312,
+   "plane_wave": 1.30006,
+   "pupil": 1.18373,
    "layer_height_um": 0.8,
    "gap_um": 0.25
   },
   {
-   "plane_wave_ladder": 1.70263,
-   "pupil_ladder": 1.39779,
-   "plane_wave_10dB": 1.11839,
-   "pupil_10dB": 0.94341,
+   "plane_wave": 1.70263,
+   "pupil": 1.39779,
    "layer_height_um": 0.8,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.42026,
-   "pupil_ladder": 1.23022,
-   "plane_wave_10dB": 0.95949,
-   "pupil_10dB": 0.88768,
+   "plane_wave": 1.42026,
+   "pupil": 1.23022,
    "layer_height_um": 0.8,
    "gap_um": 0.5
   },
   {
-   "plane_wave_ladder": 1.46283,
-   "pupil_ladder": 1.25954,
-   "plane_wave_10dB": 0.98391,
-   "pupil_10dB": 0.89641,
+   "plane_wave": 1.46283,
+   "pupil": 1.25954,
    "layer_height_um": 0.8,
    "gap_um": 0.5
   },
   {
-   "plane_wave_ladder": 1.66993,
-   "pupil_ladder": 1.4103,
-   "plane_wave_10dB": 1.066,
-   "pupil_10dB": 0.94196,
+   "plane_wave": 1.66993,
+   "pupil": 1.4103,
    "layer_height_um": 0.9,
    "gap_um": 1.25
   },
   {
-   "plane_wave_ladder": 1.52464,
-   "pupil_ladder": 1.23996,
-   "plane_wave_10dB": 0.99156,
-   "pupil_10dB": 0.88809,
+   "plane_wave": 1.52464,
+   "pupil": 1.23996,
    "layer_height_um": 0.9,
    "gap_um": 1.25
   },
   {
-   "plane_wave_ladder": 1.37037,
-   "pupil_ladder": 1.21847,
-   "plane_wave_10dB": 0.94993,
-   "pupil_10dB": 0.88622,
+   "plane_wave": 1.37037,
+   "pupil": 1.21847,
    "layer_height_um": 0.9,
    "gap_um": 0.25
   },
   {
-   "plane_wave_ladder": 1.73648,
-   "pupil_ladder": 1.297,
-   "plane_wave_10dB": 1.11886,
-   "pupil_10dB": 0.90807,
+   "plane_wave": 1.73648,
+   "pupil": 1.297,
    "layer_height_um": 0.9,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.65932,
-   "pupil_ladder": 1.24244,
-   "plane_wave_10dB": 1.04966,
-   "pupil_10dB": 0.88413,
+   "plane_wave": 1.65932,
+   "pupil": 1.24244,
    "layer_height_um": 0.9,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.34605,
-   "pupil_ladder": 1.20949,
-   "plane_wave_10dB": 0.93037,
-   "pupil_10dB": 0.8808,
+   "plane_wave": 1.34605,
+   "pupil": 1.20949,
    "layer_height_um": 0.9,
    "gap_um": 0.5
   },
   {
-   "plane_wave_ladder": 1.50255,
-   "pupil_ladder": 1.28686,
-   "plane_wave_10dB": 1.01019,
-   "pupil_10dB": 0.91122,
+   "plane_wave": 1.50255,
+   "pupil": 1.28686,
    "layer_height_um": 0.9,
    "gap_um": 0.5
   },
   {
-   "plane_wave_ladder": 1.60249,
-   "pupil_ladder": 1.36094,
-   "plane_wave_10dB": 1.02906,
-   "pupil_10dB": 0.92396,
+   "plane_wave": 1.60249,
+   "pupil": 1.36094,
    "layer_height_um": 1.0,
    "gap_um": 1.25
   },
   {
-   "plane_wave_ladder": 1.40279,
-   "pupil_ladder": 1.18923,
-   "plane_wave_10dB": 0.96411,
-   "pupil_10dB": 0.87379,
+   "plane_wave": 1.40279,
+   "pupil": 1.18923,
    "layer_height_um": 1.0,
    "gap_um": 1.25
   },
   {
-   "plane_wave_ladder": 1.38949,
-   "pupil_ladder": 1.23435,
-   "plane_wave_10dB": 0.95645,
-   "pupil_10dB": 0.89188,
+   "plane_wave": 1.38949,
+   "pupil": 1.23435,
    "layer_height_um": 1.0,
    "gap_um": 0.25
   },
   {
-   "plane_wave_ladder": 1.76929,
-   "pupil_ladder": 1.33598,
-   "plane_wave_10dB": 1.11815,
-   "pupil_10dB": 0.91182,
+   "plane_wave": 1.76929,
+   "pupil": 1.33598,
    "layer_height_um": 1.0,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.70905,
-   "pupil_ladder": 1.28548,
-   "plane_wave_10dB": 1.084,
-   "pupil_10dB": 0.90055,
+   "plane_wave": 1.70905,
+   "pupil": 1.28548,
    "layer_height_um": 1.0,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.382,
-   "pupil_ladder": 1.23674,
-   "plane_wave_10dB": 0.95677,
-   "pupil_10dB": 0.8935,
+   "plane_wave": 1.382,
+   "pupil": 1.23674,
    "layer_height_um": 1.0,
    "gap_um": 0.5
   },
   {
-   "plane_wave_ladder": 1.43302,
-   "pupil_ladder": 1.21682,
-   "plane_wave_10dB": 0.9587,
-   "pupil_10dB": 0.88358,
+   "plane_wave": 1.43302,
+   "pupil": 1.21682,
    "layer_height_um": 1.0,
    "gap_um": 0.5
   },
   {
-   "plane_wave_ladder": 1.47382,
-   "pupil_ladder": 1.26559,
-   "plane_wave_10dB": 0.98553,
-   "pupil_10dB": 0.89978,
+   "plane_wave": 1.47382,
+   "pupil": 1.26559,
    "layer_height_um": 0.6,
    "gap_um": 1.25
   },
   {
-   "plane_wave_ladder": 1.31764,
-   "pupil_ladder": 1.16549,
-   "plane_wave_10dB": 0.92321,
-   "pupil_10dB": 0.87127,
+   "plane_wave": 1.31764,
+   "pupil": 1.16549,
    "layer_height_um": 0.6,
    "gap_um": 0.25
   },
   {
-   "plane_wave_ladder": 1.33883,
-   "pupil_ladder": 1.25364,
-   "plane_wave_10dB": 0.94021,
-   "pupil_10dB": 0.90129,
+   "plane_wave": 1.33883,
+   "pupil": 1.25364,
    "layer_height_um": 0.6,
    "gap_um": 0.25
   },
   {
-   "plane_wave_ladder": 1.63781,
-   "pupil_ladder": 1.22839,
-   "plane_wave_10dB": 1.04328,
-   "pupil_10dB": 0.8857,
+   "plane_wave": 1.63781,
+   "pupil": 1.22839,
    "layer_height_um": 0.6,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.52795,
-   "pupil_ladder": 1.19278,
-   "plane_wave_10dB": 1.00374,
-   "pupil_10dB": 0.87587,
+   "plane_wave": 1.52795,
+   "pupil": 1.19278,
    "layer_height_um": 0.6,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.33979,
-   "pupil_ladder": 1.17387,
-   "plane_wave_10dB": 0.92691,
-   "pupil_10dB": 0.87137,
+   "plane_wave": 1.33979,
+   "pupil": 1.17387,
    "layer_height_um": 0.6,
    "gap_um": 0.5
   },
   {
-   "plane_wave_ladder": 1.45769,
-   "pupil_ladder": 1.28399,
-   "plane_wave_10dB": 0.9919,
-   "pupil_10dB": 0.91195,
+   "plane_wave": 1.45769,
+   "pupil": 1.28399,
    "layer_height_um": 0.7,
    "gap_um": 1.25
   },
   {
-   "plane_wave_ladder": 1.52138,
-   "pupil_ladder": 1.21028,
-   "plane_wave_10dB": 0.98695,
-   "pupil_10dB": 0.88385,
+   "plane_wave": 1.52138,
+   "pupil": 1.21028,
    "layer_height_um": 0.7,
    "gap_um": 1.25
   },
   {
-   "plane_wave_ladder": 1.36937,
-   "pupil_ladder": 1.22215,
-   "plane_wave_10dB": 0.92796,
-   "pupil_10dB": 0.88767,
+   "plane_wave": 1.36937,
+   "pupil": 1.22215,
    "layer_height_um": 0.7,
    "gap_um": 0.25
   },
   {
-   "plane_wave_ladder": 1.35711,
-   "pupil_ladder": 1.16394,
-   "plane_wave_10dB": 0.93898,
-   "pupil_10dB": 0.86796,
+   "plane_wave": 1.35711,
+   "pupil": 1.16394,
    "layer_height_um": 0.7,
    "gap_um": 0.25
   },
   {
-   "plane_wave_ladder": 1.62153,
-   "pupil_ladder": 1.29395,
-   "plane_wave_10dB": 1.04883,
-   "pupil_10dB": 0.90529,
+   "plane_wave": 1.62153,
+   "pupil": 1.29395,
    "layer_height_um": 0.7,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.33346,
-   "pupil_ladder": 1.18323,
-   "plane_wave_10dB": 0.91603,
-   "pupil_10dB": 0.87334,
+   "plane_wave": 1.33346,
+   "pupil": 1.18323,
    "layer_height_um": 0.7,
    "gap_um": 0.5
   },
   {
-   "plane_wave_ladder": 1.40514,
-   "pupil_ladder": 1.23097,
-   "plane_wave_10dB": 0.97297,
-   "pupil_10dB": 0.89039,
+   "plane_wave": 1.40514,
+   "pupil": 1.23097,
    "layer_height_um": 0.7,
    "gap_um": 0.5
   },
   {
-   "plane_wave_ladder": 1.61128,
-   "pupil_ladder": 1.34053,
-   "plane_wave_10dB": 1.01863,
-   "pupil_10dB": 0.90993,
+   "plane_wave": 1.61128,
+   "pupil": 1.34053,
    "layer_height_um": 0.8,
    "gap_um": 1.25
   },
   {
-   "plane_wave_ladder": 1.59873,
-   "pupil_ladder": 1.23232,
-   "plane_wave_10dB": 1.04786,
-   "pupil_10dB": 0.88854,
+   "plane_wave": 1.59873,
+   "pupil": 1.23232,
    "layer_height_um": 0.8,
    "gap_um": 1.25
   },
   {
-   "plane_wave_ladder": 1.41344,
-   "pupil_ladder": 1.23065,
-   "plane_wave_10dB": 0.982,
-   "pupil_10dB": 0.89155,
+   "plane_wave": 1.41344,
+   "pupil": 1.23065,
    "layer_height_um": 0.8,
    "gap_um": 0.25
   },
   {
-   "plane_wave_ladder": 1.87199,
-   "pupil_ladder": 1.50955,
-   "plane_wave_10dB": 1.1881,
-   "pupil_10dB": 0.9749,
+   "plane_wave": 1.87199,
+   "pupil": 1.50955,
    "layer_height_um": 0.8,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.61302,
-   "pupil_ladder": 1.26825,
-   "plane_wave_10dB": 1.04603,
-   "pupil_10dB": 0.89822,
+   "plane_wave": 1.61302,
+   "pupil": 1.26825,
    "layer_height_um": 0.8,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.40374,
-   "pupil_ladder": 1.23731,
-   "plane_wave_10dB": 0.9325,
-   "pupil_10dB": 0.88284,
+   "plane_wave": 1.40374,
+   "pupil": 1.23731,
    "layer_height_um": 0.8,
    "gap_um": 0.5
   },
   {
-   "plane_wave_ladder": 1.40621,
-   "pupil_ladder": 1.25514,
-   "plane_wave_10dB": 0.97348,
-   "pupil_10dB": 0.89948,
+   "plane_wave": 1.40621,
+   "pupil": 1.25514,
    "layer_height_um": 0.8,
    "gap_um": 0.5
   },
   {
-   "plane_wave_ladder": 1.71655,
-   "pupil_ladder": 1.46988,
-   "plane_wave_10dB": 1.08191,
-   "pupil_10dB": 0.96273,
+   "plane_wave": 1.71655,
+   "pupil": 1.46988,
    "layer_height_um": 0.9,
    "gap_um": 1.25
   },
   {
-   "plane_wave_ladder": 1.33197,
-   "pupil_ladder": 1.19105,
-   "plane_wave_10dB": 0.93702,
-   "pupil_10dB": 0.87863,
+   "plane_wave": 1.33197,
+   "pupil": 1.19105,
    "layer_height_um": 0.9,
    "gap_um": 0.25
   },
   {
-   "plane_wave_ladder": 1.3866,
-   "pupil_ladder": 1.25702,
-   "plane_wave_10dB": 0.9489,
-   "pupil_10dB": 0.89747,
+   "plane_wave": 1.3866,
+   "pupil": 1.25702,
    "layer_height_um": 0.9,
    "gap_um": 0.25
   },
   {
-   "plane_wave_ladder": 1.59664,
-   "pupil_ladder": 1.25566,
-   "plane_wave_10dB": 1.03049,
-   "pupil_10dB": 0.88765,
+   "plane_wave": 1.59664,
+   "pupil": 1.25566,
    "layer_height_um": 0.9,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.6872,
-   "pupil_ladder": 1.15617,
-   "plane_wave_10dB": 1.06141,
-   "pupil_10dB": 0.86164,
+   "plane_wave": 1.6872,
+   "pupil": 1.15617,
    "layer_height_um": 0.9,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.48218,
-   "pupil_ladder": 1.30972,
-   "plane_wave_10dB": 0.98636,
-   "pupil_10dB": 0.91539,
+   "plane_wave": 1.48218,
+   "pupil": 1.30972,
    "layer_height_um": 0.9,
    "gap_um": 0.5
   },
   {
-   "plane_wave_ladder": 1.59928,
-   "pupil_ladder": 1.30477,
-   "plane_wave_10dB": 1.02553,
-   "pupil_10dB": 0.90387,
+   "plane_wave": 1.59928,
+   "pupil": 1.30477,
    "layer_height_um": 1.0,
    "gap_um": 1.25
   },
   {
-   "plane_wave_ladder": 1.38577,
-   "pupil_ladder": 1.22685,
-   "plane_wave_10dB": 0.95537,
-   "pupil_10dB": 0.88962,
+   "plane_wave": 1.38577,
+   "pupil": 1.22685,
    "layer_height_um": 1.0,
    "gap_um": 0.25
   },
   {
-   "plane_wave_ladder": 1.42592,
-   "pupil_ladder": 1.21405,
-   "plane_wave_10dB": 0.96373,
-   "pupil_10dB": 0.87964,
+   "plane_wave": 1.42592,
+   "pupil": 1.21405,
    "layer_height_um": 1.0,
    "gap_um": 0.25
   },
   {
-   "plane_wave_ladder": 1.67777,
-   "pupil_ladder": 1.30981,
-   "plane_wave_10dB": 1.0793,
-   "pupil_10dB": 0.90615,
+   "plane_wave": 1.67777,
+   "pupil": 1.30981,
    "layer_height_um": 1.0,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.46756,
-   "pupil_ladder": 1.10914,
-   "plane_wave_10dB": 0.97328,
-   "pupil_10dB": 0.85575,
+   "plane_wave": 1.46756,
+   "pupil": 1.10914,
    "layer_height_um": 1.0,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.39844,
-   "pupil_ladder": 1.14575,
-   "plane_wave_10dB": 0.94512,
-   "pupil_10dB": 0.86524,
+   "plane_wave": 1.39844,
+   "pupil": 1.14575,
    "layer_height_um": 1.0,
    "gap_um": 0.5
   },
   {
-   "plane_wave_ladder": 1.49755,
-   "pupil_ladder": 1.25669,
-   "plane_wave_10dB": 1.01275,
-   "pupil_10dB": 0.90075,
+   "plane_wave": 1.49755,
+   "pupil": 1.25669,
    "layer_height_um": 0.6,
    "gap_um": 1.25
   },
   {
-   "plane_wave_ladder": 1.64055,
-   "pupil_ladder": 1.3489,
-   "plane_wave_10dB": 1.06842,
-   "pupil_10dB": 0.93395,
+   "plane_wave": 1.64055,
+   "pupil": 1.3489,
    "layer_height_um": 0.6,
    "gap_um": 1.25
   },
   {
-   "plane_wave_ladder": 1.31533,
-   "pupil_ladder": 1.18178,
-   "plane_wave_10dB": 0.91339,
-   "pupil_10dB": 0.87531,
+   "plane_wave": 1.31533,
+   "pupil": 1.18178,
    "layer_height_um": 0.6,
    "gap_um": 0.25
   },
   {
-   "plane_wave_ladder": 1.2279,
-   "pupil_ladder": 1.1184,
-   "plane_wave_10dB": 0.88527,
-   "pupil_10dB": 0.85748,
+   "plane_wave": 1.2279,
+   "pupil": 1.1184,
    "layer_height_um": 0.6,
    "gap_um": 0.25
   },
   {
-   "plane_wave_ladder": 1.65394,
-   "pupil_ladder": 1.28113,
-   "plane_wave_10dB": 1.0664,
-   "pupil_10dB": 0.90195,
+   "plane_wave": 1.65394,
+   "pupil": 1.28113,
    "layer_height_um": 0.6,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.32741,
-   "pupil_ladder": 1.17898,
-   "plane_wave_10dB": 0.92789,
-   "pupil_10dB": 0.87439,
+   "plane_wave": 1.32741,
+   "pupil": 1.17898,
    "layer_height_um": 0.6,
    "gap_um": 0.5
   },
   {
-   "plane_wave_ladder": 1.38584,
-   "pupil_ladder": 1.22124,
-   "plane_wave_10dB": 0.96329,
-   "pupil_10dB": 0.88708,
+   "plane_wave": 1.38584,
+   "pupil": 1.22124,
    "layer_height_um": 0.6,
    "gap_um": 0.5
   },
   {
-   "plane_wave_ladder": 1.51954,
-   "pupil_ladder": 1.32856,
-   "plane_wave_10dB": 1.02698,
-   "pupil_10dB": 0.92546,
+   "plane_wave": 1.51954,
+   "pupil": 1.32856,
    "layer_height_um": 0.7,
    "gap_um": 1.25
   },
   {
-   "plane_wave_ladder": 1.42992,
-   "pupil_ladder": 1.25675,
-   "plane_wave_10dB": 0.95304,
-   "pupil_10dB": 0.89256,
+   "plane_wave": 1.42992,
+   "pupil": 1.25675,
    "layer_height_um": 0.7,
    "gap_um": 1.25
   },
   {
-   "plane_wave_ladder": 1.31971,
-   "pupil_ladder": 1.15367,
-   "plane_wave_10dB": 0.91995,
-   "pupil_10dB": 0.86626,
+   "plane_wave": 1.31971,
+   "pupil": 1.15367,
    "layer_height_um": 0.7,
    "gap_um": 0.25
   },
   {
-   "plane_wave_ladder": 1.76841,
-   "pupil_ladder": 1.3847,
-   "plane_wave_10dB": 1.13323,
-   "pupil_10dB": 0.94025,
+   "plane_wave": 1.76841,
+   "pupil": 1.3847,
    "layer_height_um": 0.7,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.62976,
-   "pupil_ladder": 1.28036,
-   "plane_wave_10dB": 1.06362,
-   "pupil_10dB": 0.90957,
+   "plane_wave": 1.62976,
+   "pupil": 1.28036,
    "layer_height_um": 0.7,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.50603,
-   "pupil_ladder": 1.28904,
-   "plane_wave_10dB": 0.97658,
-   "pupil_10dB": 0.89821,
+   "plane_wave": 1.50603,
+   "pupil": 1.28904,
    "layer_height_um": 0.7,
    "gap_um": 0.5
   },
   {
-   "plane_wave_ladder": 1.36252,
-   "pupil_ladder": 1.165,
-   "plane_wave_10dB": 0.93486,
-   "pupil_10dB": 0.8681,
+   "plane_wave": 1.36252,
+   "pupil": 1.165,
    "layer_height_um": 0.7,
    "gap_um": 0.5
   },
   {
-   "plane_wave_ladder": 1.65087,
-   "pupil_ladder": 1.42553,
-   "plane_wave_10dB": 1.07566,
-   "pupil_10dB": 0.95038,
+   "plane_wave": 1.65087,
+   "pupil": 1.42553,
    "layer_height_um": 0.8,
    "gap_um": 1.25
   },
   {
-   "plane_wave_ladder": 1.33705,
-   "pupil_ladder": 1.19715,
-   "plane_wave_10dB": 0.93837,
-   "pupil_10dB": 0.87951,
+   "plane_wave": 1.33705,
+   "pupil": 1.19715,
    "layer_height_um": 0.8,
    "gap_um": 0.25
   },
   {
-   "plane_wave_ladder": 1.34612,
-   "pupil_ladder": 1.23506,
-   "plane_wave_10dB": 0.93843,
-   "pupil_10dB": 0.8929,
+   "plane_wave": 1.34612,
+   "pupil": 1.23506,
    "layer_height_um": 0.8,
    "gap_um": 0.25
   },
   {
-   "plane_wave_ladder": 1.65496,
-   "pupil_ladder": 1.25256,
-   "plane_wave_10dB": 1.04289,
-   "pupil_10dB": 0.88268,
+   "plane_wave": 1.65496,
+   "pupil": 1.25256,
    "layer_height_um": 0.8,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.56743,
-   "pupil_ladder": 1.20519,
-   "plane_wave_10dB": 1.01027,
-   "pupil_10dB": 0.87577,
+   "plane_wave": 1.56743,
+   "pupil": 1.20519,
    "layer_height_um": 0.8,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.35613,
-   "pupil_ladder": 1.21174,
-   "plane_wave_10dB": 0.93119,
-   "pupil_10dB": 0.88326,
+   "plane_wave": 1.35613,
+   "pupil": 1.21174,
    "layer_height_um": 0.8,
    "gap_um": 0.5
   },
   {
-   "plane_wave_ladder": 1.66146,
-   "pupil_ladder": 1.3975,
-   "plane_wave_10dB": 1.05797,
-   "pupil_10dB": 0.93489,
+   "plane_wave": 1.66146,
+   "pupil": 1.3975,
    "layer_height_um": 0.9,
    "gap_um": 1.25
   },
   {
-   "plane_wave_ladder": 1.57614,
-   "pupil_ladder": 1.19401,
-   "plane_wave_10dB": 1.01979,
-   "pupil_10dB": 0.87192,
+   "plane_wave": 1.57614,
+   "pupil": 1.19401,
    "layer_height_um": 0.9,
    "gap_um": 1.25
   },
   {
-   "plane_wave_ladder": 1.41485,
-   "pupil_ladder": 1.23613,
-   "plane_wave_10dB": 0.95744,
-   "pupil_10dB": 0.8903,
+   "plane_wave": 1.41485,
+   "pupil": 1.23613,
    "layer_height_um": 0.9,
    "gap_um": 0.25
   },
   {
-   "plane_wave_ladder": 1.2945,
-   "pupil_ladder": 1.12032,
-   "plane_wave_10dB": 0.90356,
-   "pupil_10dB": 0.8575,
+   "plane_wave": 1.2945,
+   "pupil": 1.12032,
    "layer_height_um": 0.9,
    "gap_um": 0.25
   },
   {
-   "plane_wave_ladder": 1.64325,
-   "pupil_ladder": 1.20582,
-   "plane_wave_10dB": 1.05622,
-   "pupil_10dB": 0.87827,
+   "plane_wave": 1.64325,
+   "pupil": 1.20582,
    "layer_height_um": 0.9,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.37422,
-   "pupil_ladder": 1.19166,
-   "plane_wave_10dB": 0.933,
-   "pupil_10dB": 0.87558,
+   "plane_wave": 1.37422,
+   "pupil": 1.19166,
    "layer_height_um": 0.9,
    "gap_um": 0.5
   },
   {
-   "plane_wave_ladder": 1.50461,
-   "pupil_ladder": 1.23572,
-   "plane_wave_10dB": 0.9794,
-   "pupil_10dB": 0.88476,
+   "plane_wave": 1.50461,
+   "pupil": 1.23572,
    "layer_height_um": 0.9,
    "gap_um": 0.5
   },
   {
-   "plane_wave_ladder": 1.9066,
-   "pupil_ladder": 1.31278,
-   "plane_wave_10dB": 1.23463,
-   "pupil_10dB": 0.91584,
+   "plane_wave": 1.9066,
+   "pupil": 1.31278,
    "layer_height_um": 0.6,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 2.01635,
-   "pupil_ladder": 1.35749,
-   "plane_wave_10dB": 1.28153,
-   "pupil_10dB": 0.91188,
+   "plane_wave": 2.01635,
+   "pupil": 1.35749,
    "layer_height_um": 1.0,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.82558,
-   "pupil_ladder": 1.41758,
-   "plane_wave_10dB": 1.15937,
-   "pupil_10dB": 0.96239,
+   "plane_wave": 1.82558,
+   "pupil": 1.41758,
    "layer_height_um": 0.6,
    "gap_um": 1.25
   },
   {
-   "plane_wave_ladder": 1.89354,
-   "pupil_ladder": 1.36769,
-   "plane_wave_10dB": 1.20608,
-   "pupil_10dB": 0.93989,
+   "plane_wave": 1.89354,
+   "pupil": 1.36769,
    "layer_height_um": 0.6,
    "gap_um": 1.75
   },
   {
-   "plane_wave_ladder": 1.95231,
-   "pupil_ladder": 1.31145,
-   "plane_wave_10dB": 1.24949,
-   "pupil_10dB": 0.91344,
+   "plane_wave": 1.95231,
+   "pupil": 1.31145,
    "layer_height_um": 1.0,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.72769,
-   "pupil_ladder": 1.26402,
-   "plane_wave_10dB": 1.11811,
-   "pupil_10dB": 0.9013,
+   "plane_wave": 1.72769,
+   "pupil": 1.26402,
    "layer_height_um": 0.6,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.94748,
-   "pupil_ladder": 1.29994,
-   "plane_wave_10dB": 1.24211,
-   "pupil_10dB": 0.91252,
+   "plane_wave": 1.94748,
+   "pupil": 1.29994,
    "layer_height_um": 0.6,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.9382,
-   "pupil_ladder": 1.33814,
-   "plane_wave_10dB": 1.23606,
-   "pupil_10dB": 0.9229,
+   "plane_wave": 1.9382,
+   "pupil": 1.33814,
    "layer_height_um": 0.8,
    "gap_um": 2.5
   },
   {
-   "plane_wave_ladder": 1.28477,
-   "pupil_ladder": 1.09104,
-   "plane_wave_10dB": 0.91421,
-   "pupil_10dB": 0.85543,
+   "plane_wave": 1.28477,
+   "pupil": 1.09104,
    "layer_height_um": 0.6,
    "gap_um": 2.5
   }
  ],
  "pupil_optimized": [
   {
-   "plane_wave_ladder": 1.87617,
-   "pupil_ladder": 1.85843,
-   "plane_wave_10dB": 1.21867,
-   "pupil_10dB": 1.18721,
+   "plane_wave": 1.87617,
+   "pupil": 1.85843,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.55122,
-   "pupil_ladder": 1.52281,
-   "plane_wave_10dB": 1.04727,
-   "pupil_10dB": 1.01855,
+   "plane_wave": 1.55122,
+   "pupil": 1.52281,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.81997,
-   "pupil_ladder": 1.8207,
-   "plane_wave_10dB": 1.18555,
-   "pupil_10dB": 1.16025,
+   "plane_wave": 1.81997,
+   "pupil": 1.8207,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.86109,
-   "pupil_ladder": 1.8536,
-   "plane_wave_10dB": 1.20256,
-   "pupil_10dB": 1.18164,
+   "plane_wave": 1.86109,
+   "pupil": 1.8536,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.73626,
-   "pupil_ladder": 1.71129,
-   "plane_wave_10dB": 1.12092,
-   "pupil_10dB": 1.08906,
+   "plane_wave": 1.73626,
+   "pupil": 1.71129,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.81983,
-   "pupil_ladder": 1.78236,
-   "plane_wave_10dB": 1.19066,
-   "pupil_10dB": 1.145,
+   "plane_wave": 1.81983,
+   "pupil": 1.78236,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.85779,
-   "pupil_ladder": 1.86374,
-   "plane_wave_10dB": 1.20313,
-   "pupil_10dB": 1.18952,
+   "plane_wave": 1.85779,
+   "pupil": 1.86374,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.82428,
-   "pupil_ladder": 1.8303,
-   "plane_wave_10dB": 1.18126,
-   "pupil_10dB": 1.16491,
+   "plane_wave": 1.82428,
+   "pupil": 1.8303,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.81717,
-   "pupil_ladder": 1.82064,
-   "plane_wave_10dB": 1.17467,
-   "pupil_10dB": 1.16262,
+   "plane_wave": 1.81717,
+   "pupil": 1.82064,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.71138,
-   "pupil_ladder": 1.64344,
-   "plane_wave_10dB": 1.1551,
-   "pupil_10dB": 1.08857,
+   "plane_wave": 1.71138,
+   "pupil": 1.64344,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.88986,
-   "pupil_ladder": 1.86787,
-   "plane_wave_10dB": 1.21505,
-   "pupil_10dB": 1.19129,
+   "plane_wave": 1.88986,
+   "pupil": 1.86787,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.75721,
-   "pupil_ladder": 1.72536,
-   "plane_wave_10dB": 1.16573,
-   "pupil_10dB": 1.13286,
+   "plane_wave": 1.75721,
+   "pupil": 1.72536,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.84874,
-   "pupil_ladder": 1.84229,
-   "plane_wave_10dB": 1.19312,
-   "pupil_10dB": 1.17162,
+   "plane_wave": 1.84874,
+   "pupil": 1.84229,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.74855,
-   "pupil_ladder": 1.75737,
-   "plane_wave_10dB": 1.12966,
-   "pupil_10dB": 1.12338,
+   "plane_wave": 1.74855,
+   "pupil": 1.75737,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.82517,
-   "pupil_ladder": 1.82282,
-   "plane_wave_10dB": 1.18665,
-   "pupil_10dB": 1.16112,
+   "plane_wave": 1.82517,
+   "pupil": 1.82282,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.8324,
-   "pupil_ladder": 1.8385,
-   "plane_wave_10dB": 1.18449,
-   "pupil_10dB": 1.16843,
+   "plane_wave": 1.8324,
+   "pupil": 1.8385,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.82939,
-   "pupil_ladder": 1.83586,
-   "plane_wave_10dB": 1.18629,
-   "pupil_10dB": 1.16771,
+   "plane_wave": 1.82939,
+   "pupil": 1.83586,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.98359,
-   "pupil_ladder": 1.84602,
-   "plane_wave_10dB": 1.28862,
-   "pupil_10dB": 1.19203,
+   "plane_wave": 1.98359,
+   "pupil": 1.84602,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.81264,
-   "pupil_ladder": 1.77805,
-   "plane_wave_10dB": 1.18447,
-   "pupil_10dB": 1.1438,
+   "plane_wave": 1.81264,
+   "pupil": 1.77805,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.76993,
-   "pupil_ladder": 1.69949,
-   "plane_wave_10dB": 1.17021,
-   "pupil_10dB": 1.10542,
+   "plane_wave": 1.76993,
+   "pupil": 1.69949,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.83613,
-   "pupil_ladder": 1.77838,
-   "plane_wave_10dB": 1.20781,
-   "pupil_10dB": 1.15046,
+   "plane_wave": 1.83613,
+   "pupil": 1.77838,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.91347,
-   "pupil_ladder": 1.8486,
-   "plane_wave_10dB": 1.2408,
-   "pupil_10dB": 1.18637,
+   "plane_wave": 1.91347,
+   "pupil": 1.8486,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.86843,
-   "pupil_ladder": 1.8599,
-   "plane_wave_10dB": 1.21109,
-   "pupil_10dB": 1.18742,
+   "plane_wave": 1.86843,
+   "pupil": 1.8599,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.84243,
-   "pupil_ladder": 1.73736,
-   "plane_wave_10dB": 1.1901,
-   "pupil_10dB": 1.11865,
+   "plane_wave": 1.84243,
+   "pupil": 1.73736,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.82784,
-   "pupil_ladder": 1.79649,
-   "plane_wave_10dB": 1.17369,
-   "pupil_10dB": 1.1413,
+   "plane_wave": 1.82784,
+   "pupil": 1.79649,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.85382,
-   "pupil_ladder": 1.84775,
-   "plane_wave_10dB": 1.2015,
-   "pupil_10dB": 1.18034,
+   "plane_wave": 1.85382,
+   "pupil": 1.84775,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.80065,
-   "pupil_ladder": 1.78181,
-   "plane_wave_10dB": 1.16768,
-   "pupil_10dB": 1.1392,
+   "plane_wave": 1.80065,
+   "pupil": 1.78181,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.87843,
-   "pupil_ladder": 1.80464,
-   "plane_wave_10dB": 1.21834,
-   "pupil_10dB": 1.15587,
+   "plane_wave": 1.87843,
+   "pupil": 1.80464,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.83941,
-   "pupil_ladder": 1.84148,
-   "plane_wave_10dB": 1.18819,
-   "pupil_10dB": 1.17253,
+   "plane_wave": 1.83941,
+   "pupil": 1.84148,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.93026,
-   "pupil_ladder": 1.85049,
-   "plane_wave_10dB": 1.25168,
-   "pupil_10dB": 1.18712,
+   "plane_wave": 1.93026,
+   "pupil": 1.85049,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.96317,
-   "pupil_ladder": 1.82734,
-   "plane_wave_10dB": 1.27023,
-   "pupil_10dB": 1.1799,
+   "plane_wave": 1.96317,
+   "pupil": 1.82734,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.80979,
-   "pupil_ladder": 1.79201,
-   "plane_wave_10dB": 1.18218,
-   "pupil_10dB": 1.15199,
+   "plane_wave": 1.80979,
+   "pupil": 1.79201,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.62639,
-   "pupil_ladder": 1.63089,
-   "plane_wave_10dB": 1.09903,
-   "pupil_10dB": 1.06699,
+   "plane_wave": 1.62639,
+   "pupil": 1.63089,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.85496,
-   "pupil_ladder": 1.76454,
-   "plane_wave_10dB": 1.18981,
-   "pupil_10dB": 1.1219,
+   "plane_wave": 1.85496,
+   "pupil": 1.76454,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.85428,
-   "pupil_ladder": 1.77758,
-   "plane_wave_10dB": 1.18949,
-   "pupil_10dB": 1.13383,
+   "plane_wave": 1.85428,
+   "pupil": 1.77758,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.80644,
-   "pupil_ladder": 1.82602,
-   "plane_wave_10dB": 1.17455,
-   "pupil_10dB": 1.16698,
+   "plane_wave": 1.80644,
+   "pupil": 1.82602,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.88781,
-   "pupil_ladder": 1.85469,
-   "plane_wave_10dB": 1.22385,
-   "pupil_10dB": 1.18892,
+   "plane_wave": 1.88781,
+   "pupil": 1.85469,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.9017,
-   "pupil_ladder": 1.83588,
-   "plane_wave_10dB": 1.24452,
-   "pupil_10dB": 1.18277,
+   "plane_wave": 1.9017,
+   "pupil": 1.83588,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.89194,
-   "pupil_ladder": 1.85255,
-   "plane_wave_10dB": 1.2267,
-   "pupil_10dB": 1.18507,
+   "plane_wave": 1.89194,
+   "pupil": 1.85255,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.87002,
-   "pupil_ladder": 1.80192,
-   "plane_wave_10dB": 1.21522,
-   "pupil_10dB": 1.15398,
+   "plane_wave": 1.87002,
+   "pupil": 1.80192,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.72742,
-   "pupil_ladder": 1.6541,
-   "plane_wave_10dB": 1.15966,
-   "pupil_10dB": 1.08758,
+   "plane_wave": 1.72742,
+   "pupil": 1.6541,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.81786,
-   "pupil_ladder": 1.84697,
-   "plane_wave_10dB": 1.18576,
-   "pupil_10dB": 1.17708,
+   "plane_wave": 1.81786,
+   "pupil": 1.84697,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.98556,
-   "pupil_ladder": 1.85614,
-   "plane_wave_10dB": 1.28988,
-   "pupil_10dB": 1.19886,
+   "plane_wave": 1.98556,
+   "pupil": 1.85614,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.89257,
-   "pupil_ladder": 1.86001,
-   "plane_wave_10dB": 1.22431,
-   "pupil_10dB": 1.19018,
+   "plane_wave": 1.89257,
+   "pupil": 1.86001,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.86455,
-   "pupil_ladder": 1.80034,
-   "plane_wave_10dB": 1.21045,
-   "pupil_10dB": 1.1517,
+   "plane_wave": 1.86455,
+   "pupil": 1.80034,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.82746,
-   "pupil_ladder": 1.82106,
-   "plane_wave_10dB": 1.19945,
-   "pupil_10dB": 1.17293,
+   "plane_wave": 1.82746,
+   "pupil": 1.82106,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.85679,
-   "pupil_ladder": 1.79711,
-   "plane_wave_10dB": 1.1986,
-   "pupil_10dB": 1.14873,
+   "plane_wave": 1.85679,
+   "pupil": 1.79711,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.80003,
-   "pupil_ladder": 1.76647,
-   "plane_wave_10dB": 1.17011,
-   "pupil_10dB": 1.1372,
+   "plane_wave": 1.80003,
+   "pupil": 1.76647,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.85283,
-   "pupil_ladder": 1.80098,
-   "plane_wave_10dB": 1.22322,
-   "pupil_10dB": 1.1601,
+   "plane_wave": 1.85283,
+   "pupil": 1.80098,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.92171,
-   "pupil_ladder": 1.81808,
-   "plane_wave_10dB": 1.2446,
-   "pupil_10dB": 1.16233,
+   "plane_wave": 1.92171,
+   "pupil": 1.81808,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.8741,
-   "pupil_ladder": 1.85623,
-   "plane_wave_10dB": 1.21335,
-   "pupil_10dB": 1.18394,
+   "plane_wave": 1.8741,
+   "pupil": 1.85623,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.83419,
-   "pupil_ladder": 1.82543,
-   "plane_wave_10dB": 1.18753,
-   "pupil_10dB": 1.16317,
+   "plane_wave": 1.83419,
+   "pupil": 1.82543,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.86184,
-   "pupil_ladder": 1.86383,
-   "plane_wave_10dB": 1.20258,
-   "pupil_10dB": 1.18837,
+   "plane_wave": 1.86184,
+   "pupil": 1.86383,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.74738,
-   "pupil_ladder": 1.68943,
-   "plane_wave_10dB": 1.17385,
-   "pupil_10dB": 1.10419,
+   "plane_wave": 1.74738,
+   "pupil": 1.68943,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.8829,
-   "pupil_ladder": 1.77019,
-   "plane_wave_10dB": 1.22486,
-   "pupil_10dB": 1.14599,
+   "plane_wave": 1.8829,
+   "pupil": 1.77019,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.91906,
-   "pupil_ladder": 1.81611,
-   "plane_wave_10dB": 1.23277,
-   "pupil_10dB": 1.16234,
+   "plane_wave": 1.91906,
+   "pupil": 1.81611,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.74344,
-   "pupil_ladder": 1.70796,
-   "plane_wave_10dB": 1.16798,
-   "pupil_10dB": 1.11599,
+   "plane_wave": 1.74344,
+   "pupil": 1.70796,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.61246,
-   "pupil_ladder": 1.63145,
-   "plane_wave_10dB": 1.07482,
-   "pupil_10dB": 1.05444,
+   "plane_wave": 1.61246,
+   "pupil": 1.63145,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.91382,
-   "pupil_ladder": 1.82009,
-   "plane_wave_10dB": 1.23832,
-   "pupil_10dB": 1.16169,
+   "plane_wave": 1.91382,
+   "pupil": 1.82009,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.85022,
-   "pupil_ladder": 1.81225,
-   "plane_wave_10dB": 1.20109,
-   "pupil_10dB": 1.1613,
+   "plane_wave": 1.85022,
+   "pupil": 1.81225,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.76177,
-   "pupil_ladder": 1.72755,
-   "plane_wave_10dB": 1.18522,
-   "pupil_10dB": 1.12715,
+   "plane_wave": 1.76177,
+   "pupil": 1.72755,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.90369,
-   "pupil_ladder": 1.85127,
-   "plane_wave_10dB": 1.2306,
-   "pupil_10dB": 1.18749,
+   "plane_wave": 1.90369,
+   "pupil": 1.85127,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.82573,
-   "pupil_ladder": 1.76908,
-   "plane_wave_10dB": 1.18514,
-   "pupil_10dB": 1.13615,
+   "plane_wave": 1.82573,
+   "pupil": 1.76908,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.80504,
-   "pupil_ladder": 1.81353,
-   "plane_wave_10dB": 1.18484,
-   "pupil_10dB": 1.15807,
+   "plane_wave": 1.80504,
+   "pupil": 1.81353,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.61923,
-   "pupil_ladder": 1.64628,
-   "plane_wave_10dB": 1.05796,
-   "pupil_10dB": 1.05394,
+   "plane_wave": 1.61923,
+   "pupil": 1.64628,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.89392,
-   "pupil_ladder": 1.85585,
-   "plane_wave_10dB": 1.22679,
-   "pupil_10dB": 1.1871,
+   "plane_wave": 1.89392,
+   "pupil": 1.85585,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.96118,
-   "pupil_ladder": 1.86321,
-   "plane_wave_10dB": 1.27427,
-   "pupil_10dB": 1.19935,
+   "plane_wave": 1.96118,
+   "pupil": 1.86321,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.88272,
-   "pupil_ladder": 1.84759,
-   "plane_wave_10dB": 1.21248,
-   "pupil_10dB": 1.17734,
+   "plane_wave": 1.88272,
+   "pupil": 1.84759,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.74281,
-   "pupil_ladder": 1.74803,
-   "plane_wave_10dB": 1.12349,
-   "pupil_10dB": 1.11457,
+   "plane_wave": 1.74281,
+   "pupil": 1.74803,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.87905,
-   "pupil_ladder": 1.87173,
-   "plane_wave_10dB": 1.21726,
-   "pupil_10dB": 1.1976,
+   "plane_wave": 1.87905,
+   "pupil": 1.87173,
    "layer_height_um": 0.8
   },
   {
-   "plane_wave_ladder": 1.76987,
-   "pupil_ladder": 1.69825,
-   "plane_wave_10dB": 1.14805,
-   "pupil_10dB": 1.10492,
+   "plane_wave": 1.76987,
+   "pupil": 1.69825,
    "layer_height_um": 0.8
   }
  ],
  "M1": {
-  "plane_wave_ladder": 1.89445,
-  "pupil_ladder": 1.87714,
-  "plane_wave_10dB": 1.222,
-  "pupil_10dB": 1.19738
+  "plane_wave": 1.89445,
+  "pupil": 1.87714
  },
  "literature_reconstructions": {
   "Kim et al.": {
-   "plane_wave_ladder": 1.81066,
-   "pupil_ladder": 1.43564,
-   "plane_wave_10dB": 1.20074,
-   "pupil_10dB": 0.97002
+   "plane_wave": 1.81066,
+   "pupil": 1.43564
   },
   "Zou et al.": {
-   "plane_wave_ladder": 1.72058,
-   "pupil_ladder": 1.34383,
-   "plane_wave_10dB": 1.11465,
-   "pupil_10dB": 0.94223
+   "plane_wave": 1.72058,
+   "pupil": 1.34383
   },
   "Park et al.": {
-   "plane_wave_ladder": 1.8989,
-   "pupil_ladder": 1.3144,
-   "plane_wave_10dB": 1.2304,
-   "pupil_10dB": 0.921
+   "plane_wave": 1.8989,
+   "pupil": 1.3144
   },
   "Li et al.": {
-   "plane_wave_ladder": 1.4878,
-   "pupil_ladder": 1.0294,
-   "plane_wave_10dB": 0.9711,
-   "pupil_10dB": 0.8114
+   "plane_wave": 1.4878,
+   "pupil": 1.0294
   }
  }
 }

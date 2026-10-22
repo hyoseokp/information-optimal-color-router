@@ -22,13 +22,15 @@ Plotted values of the main-text figures. Each JSON file starts with a `descripti
 
 | file | figure |
 |------|--------|
-| `fig1c_designs.json` | Fig. 1c (and the Supplementary low-light figure): imaging information of the plane-wave-optimized and pupil-optimized designs, M1 and the four literature routers |
+| `fig1c_designs.json` | Fig. 1c: imaging information of the plane-wave-optimized and pupil-optimized designs, M1 and the four literature routers |
 | `fig2_sectors.json` | Fig. 2: imaging information at the six sector centers, area-weighted values, site responses |
-| `fig3_crossover.json` | Fig. 3: information difference to the CFA against the green-site SNR, crossovers, read-noise dependence |
+| `fig3_exposure_gain.json` | Fig. 3a,b: equivalent exposure gain over the CFA against the scene illuminance; the information difference and its read-noise dependence of the Supplementary Information |
 | `fig4_purity.json` | Fig. 4: purity and throughput of M1 over the pupil directions |
-| `fig5_measured.json` | Fig. 5d,e and Fig. 1e: site fractions and information difference of the fabricated M1, measured and simulated |
+| `fig5_measured.json` | Fig. 5d,e and Fig. 1e: site fractions and equivalent exposure gain of the fabricated M1, measured and simulated; values at 5 and 20 lux for M1, M2 and M3 |
 
-Imaging information is in bit per raw pixel. Sites q1-q4 follow the labels of the figures.
+Imaging information is in bit per raw pixel. Sites q1-q4 follow the labels of the figures. Light levels are scene
+illuminances in lux (18% grey scene, f/1.8, 1/30 s, 3000 K, one exposure per point); the conditions are restated in each
+`description`.
 
 ## `measured/`
 
