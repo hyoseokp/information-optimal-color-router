@@ -29,3 +29,9 @@ Plotted values of the main-text figures. Each JSON file starts with a `descripti
 | `fig5_measured.json` | Fig. 5d,e and Fig. 1e: site fractions and information difference of the fabricated M1, measured and simulated |
 
 Imaging information is in bit per raw pixel. Sites q1-q4 follow the labels of the figures.
+
+## `measured/`
+
+Raw camera frames of the fabricated M1, one per wavelength from 400 to 700 nm in 25 nm steps (`raw/M1_<wavelength>nm.npz`,
+key `frame`, 2048 x 2048 uint16 counts as recorded). `frames.json` lists the exposure time of each frame, the pixel size at
+the sample and the camera dark offset.

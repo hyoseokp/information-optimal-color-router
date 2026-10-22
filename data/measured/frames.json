@@ -1,0 +1,75 @@
+{
+ "description": "Raw camera frames of the fabricated M1 (main-text Fig. 5), one per wavelength, 16-bit counts as recorded.",
+ "camera": "sCMOS, 2048 x 2048 pixels, 16 bit",
+ "pixel_at_sample_um": 0.065,
+ "dark_offset_counts": 100,
+ "illumination": "monochromator, 25 nm steps; untilted NA 0.30 cone through the 0.7 mm fused-silica substrate (chip flipped, SiN facing the objective)",
+ "collection": "100x objective, NA 0.9",
+ "frames": [
+  {
+   "file": "raw/M1_400nm.npz",
+   "wavelength_nm": 400,
+   "exposure_ms": 2688.96
+  },
+  {
+   "file": "raw/M1_425nm.npz",
+   "wavelength_nm": 425,
+   "exposure_ms": 387.88
+  },
+  {
+   "file": "raw/M1_450nm.npz",
+   "wavelength_nm": 450,
+   "exposure_ms": 174.824
+  },
+  {
+   "file": "raw/M1_475nm.npz",
+   "wavelength_nm": 475,
+   "exposure_ms": 72.46
+  },
+  {
+   "file": "raw/M1_500nm.npz",
+   "wavelength_nm": 500,
+   "exposure_ms": 59.57
+  },
+  {
+   "file": "raw/M1_525nm.npz",
+   "wavelength_nm": 525,
+   "exposure_ms": 47.619
+  },
+  {
+   "file": "raw/M1_550nm.npz",
+   "wavelength_nm": 550,
+   "exposure_ms": 42.366
+  },
+  {
+   "file": "raw/M1_575nm.npz",
+   "wavelength_nm": 575,
+   "exposure_ms": 45.047
+  },
+  {
+   "file": "raw/M1_600nm.npz",
+   "wavelength_nm": 600,
+   "exposure_ms": 61.968
+  },
+  {
+   "file": "raw/M1_625nm.npz",
+   "wavelength_nm": 625,
+   "exposure_ms": 60.662
+  },
+  {
+   "file": "raw/M1_650nm.npz",
+   "wavelength_nm": 650,
+   "exposure_ms": 59.292
+  },
+  {
+   "file": "raw/M1_675nm.npz",
+   "wavelength_nm": 675,
+   "exposure_ms": 62.184
+  },
+  {
+   "file": "raw/M1_700nm.npz",
+   "wavelength_nm": 700,
+   "exposure_ms": 59.808
+  }
+ ]
+}
