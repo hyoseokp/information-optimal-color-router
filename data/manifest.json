@@ -14,8 +14,7 @@
   "gap_um": 1.25,
   "na": 0.3,
   "height_um": 0.8,
-  "champion": "r1a",
-  "note": "800-nm designs of the paper (M1-M6 = r1a, r2a, r2b, r3a, r3b, r3c). r1a is the seed-22 optimisation result; r2a..r3c are optimised at their own sector centres starting from a partly optimised stage of r1a. i_img_16ray_bits is the paper's 16-ray reference-forward score."
+  "note": "800-nm designs of the paper (M1-M6 = r1a, r2a, r2b, r3a, r3b, r3c)."
  },
  "masks": [
   {
@@ -24,10 +23,8 @@
    "cra_deg": 2.5,
    "azimuth_deg": 22.5,
    "seed": 22,
-   "start": "random (seed 22 optimisation)",
    "height_um": 0.8,
-   "i_img_16ray_bits": 1.8771,
-   "description": "Per-slot design for field slot r1a (near on-axis ring; also the champion single design carried across the field).",
+   "description": "Design M1 for the field sector centred at chief-ray angle 2.5 deg, azimuth 22.5 deg.",
    "design": "M1"
   },
   {
@@ -36,10 +33,8 @@
    "cra_deg": 10.0,
    "azimuth_deg": 11.25,
    "seed": 22,
-   "start": "warm start from the seed-22 latent (slot r1a)",
    "height_um": 0.8,
-   "i_img_16ray_bits": 1.8243,
-   "description": "Per-slot design for field slot r2a (middle ring).",
+   "description": "Design M2 for the field sector centred at chief-ray angle 10 deg, azimuth 11.25 deg.",
    "design": "M2"
   },
   {
@@ -48,10 +43,8 @@
    "cra_deg": 10.0,
    "azimuth_deg": 33.75,
    "seed": 22,
-   "start": "warm start from a partly optimised stage of the seed-22 optimisation (slot r1a)",
    "height_um": 0.8,
-   "i_img_16ray_bits": 1.8111,
-   "description": "Per-slot design for field slot r2b (middle ring).",
+   "description": "Design M3 for the field sector centred at chief-ray angle 10 deg, azimuth 33.75 deg.",
    "design": "M3"
   },
   {
@@ -60,10 +53,8 @@
    "cra_deg": 20.0,
    "azimuth_deg": 7.5,
    "seed": 22,
-   "start": "warm start from the seed-22 latent (slot r1a)",
    "height_um": 0.8,
-   "i_img_16ray_bits": 1.6767,
-   "description": "Per-slot design for field slot r3a (outer ring).",
+   "description": "Design M4 for the field sector centred at chief-ray angle 20 deg, azimuth 7.5 deg.",
    "design": "M4"
   },
   {
@@ -72,10 +63,8 @@
    "cra_deg": 20.0,
    "azimuth_deg": 22.5,
    "seed": 22,
-   "start": "warm start from the seed-22 latent (slot r1a)",
    "height_um": 0.8,
-   "i_img_16ray_bits": 1.6825,
-   "description": "Per-slot design for field slot r3b (outer ring).",
+   "description": "Design M5 for the field sector centred at chief-ray angle 20 deg, azimuth 22.5 deg.",
    "design": "M5"
   },
   {
@@ -84,10 +73,8 @@
    "cra_deg": 20.0,
    "azimuth_deg": 37.5,
    "seed": 22,
-   "start": "warm start from the seed-22 latent (slot r1a)",
    "height_um": 0.8,
-   "i_img_16ray_bits": 1.7009,
-   "description": "Per-slot design for field slot r3c (outer ring).",
+   "description": "Design M6 for the field sector centred at chief-ray angle 20 deg, azimuth 37.5 deg.",
    "design": "M6"
   }
  ]

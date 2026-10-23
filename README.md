@@ -59,7 +59,7 @@ structure solve (288 to 144 eigendecompositions per 16-ray score), the
 permittivity-convolution inverse is shared across rays, the input/output
 S-matrices are handled as blocks of diagonals, the 4N x 4N mode-coupling inverse
 is split into two 2N inverses, and the detector field is synthesised
-separably. Reported scores are always taken from the reference forward.
+separably.
 
 ```python
 from crfast.forward import FastPupilForward
