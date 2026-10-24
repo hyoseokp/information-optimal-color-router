@@ -1,53 +1,53 @@
 {
- "description": "Main-text Fig. 2h: fraction of the incident power reaching sites q1-q4 of M1 at its sector centre against wavelength. Fig. 2i: I_img (bit per raw pixel, 16-ray pupil, (8,8), one exposure of 14 lux) at the six sector centres for the CFA, the mask designed for that sector and M1 used unchanged. Scene illuminance in lux: an 18% grey scene imaged at f/1.8 (lens transmission 0.9), 1/30 s, 3000 K blackbody, one exposure per point, read noise 1.5 e- rms; one lux puts 1.07 e- into the on-axis green site of the CFA. CFA = measured spectral sensitivities of a smartphone image sensor, green peak scaled to 0.90.",
+ "description": "Main-text Fig. 2h: fraction of the incident power reaching sites q1-q4 of M1 at its sector centre against wavelength. Fig. 2i: I_img (bit per raw pixel, 16-ray pupil, (8,8), one exposure of 20 lux) at the six sector centres for the CFA, the mask designed for that sector and M1 used unchanged. Scene illuminance in lux: an 18% grey scene imaged at f/1.8 (lens transmission 0.9), 1/30 s, 3000 K blackbody, one exposure per point, read noise 1.5 e- rms; one lux puts 1.07 e- into the on-axis green site of the CFA. CFA = measured spectral sensitivities of a smartphone image sensor, green peak scaled to 0.90.",
  "sectors": [
   {
    "design": "M1",
    "cra_deg": 2.5,
    "azimuth_deg": 22.5,
-   "cfa": 0.95816,
-   "sector_design": 1.19742,
-   "M1_unchanged": 1.19742
+   "cfa": 1.12606,
+   "sector_design": 1.33554,
+   "M1_unchanged": 1.33554
   },
   {
    "design": "M2",
    "cra_deg": 10.0,
    "azimuth_deg": 11.25,
-   "cfa": 0.934,
-   "sector_design": 1.15181,
-   "M1_unchanged": 1.12474
+   "cfa": 1.10066,
+   "sector_design": 1.28697,
+   "M1_unchanged": 1.25525
   },
   {
    "design": "M3",
    "cra_deg": 10.0,
    "azimuth_deg": 33.75,
-   "cfa": 0.934,
-   "sector_design": 1.14614,
-   "M1_unchanged": 1.12954
+   "cfa": 1.10066,
+   "sector_design": 1.27952,
+   "M1_unchanged": 1.26046
   },
   {
    "design": "M4",
    "cra_deg": 20.0,
    "azimuth_deg": 7.5,
-   "cfa": 0.85659,
-   "sector_design": 1.05588,
-   "M1_unchanged": 0.93152
+   "cfa": 1.01887,
+   "sector_design": 1.17897,
+   "M1_unchanged": 1.0328
   },
   {
    "design": "M5",
    "cra_deg": 20.0,
    "azimuth_deg": 22.5,
-   "cfa": 0.85659,
-   "sector_design": 1.05409,
-   "M1_unchanged": 0.92881
+   "cfa": 1.01887,
+   "sector_design": 1.17812,
+   "M1_unchanged": 1.02874
   },
   {
    "design": "M6",
    "cra_deg": 20.0,
    "azimuth_deg": 37.5,
-   "cfa": 0.85659,
-   "sector_design": 1.06049,
-   "M1_unchanged": 0.93064
+   "cfa": 1.01887,
+   "sector_design": 1.18652,
+   "M1_unchanged": 1.0303
   }
  ],
  "M1_site_response": {

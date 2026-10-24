@@ -22,15 +22,15 @@ Plotted values of the main-text figures. Each JSON file starts with a `descripti
 
 | file | figure |
 |------|--------|
-| `fig1c_designs.json` | Fig. 1c: imaging information at 14 lux of the plane-wave-optimized and pupil-optimized designs, M1 and the four literature routers |
-| `fig2_sectors.json` | Fig. 2h,i: site responses of M1; imaging information at 14 lux at the six sector centers |
+| `fig1c_designs.json` | Fig. 1c: imaging information at 20 lux of the plane-wave-optimized and pupil-optimized designs, M1 and the four literature routers |
+| `fig2_sectors.json` | Fig. 2h,i: site responses of M1; imaging information at 20 lux at the six sector centers |
 | `fig3_exposure_gain.json` | Fig. 3a,b: equivalent exposure gain over the CFA against the scene illuminance |
 | `fig4_purity.json` | Fig. 4: purity and throughput of M1 over the pupil directions |
 | `fig5_measured.json` | Fig. 5d,e and Fig. 1e: site fractions of the six fabricated masks, measured and simulated; equivalent exposure gain of M1 against the scene illuminance |
 
 Imaging information is in bit per raw pixel. Sites q1-q4 follow the labels of the figures. Light levels are scene
 illuminances in lux (18% grey scene, f/1.8, 1/30 s, 3000 K, one exposure per point); designs are compared at one exposure of
-14 lux. The conditions are restated in each `description`.
+20 lux. The conditions are restated in each `description`.
 
 ## `measured/`
 

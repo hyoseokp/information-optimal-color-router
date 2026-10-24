@@ -1,750 +1,750 @@
 {
- "description": "Main-text Fig. 1c: imaging information I_img (bit per raw pixel) of each design under a normal plane wave and under the on-axis imaging-system pupil, at one exposure of 14 lux. Designs are compared at one exposure of 14 lux (scene illuminance 13.6 lux on this scale). Scene illuminance in lux: an 18% grey scene imaged at f/1.8 (lens transmission 0.9), 1/30 s, 3000 K blackbody, one exposure per point, read noise 1.5 e- rms; one lux puts 1.07 e- into the on-axis green site of the CFA. CFA = measured spectral sensitivities of a smartphone image sensor, green peak scaled to 0.90.",
- "cfa": 0.95816,
+ "description": "Main-text Fig. 1c: imaging information I_img (bit per raw pixel) of each design under a normal plane wave and under the on-axis imaging-system pupil, at one exposure of 20 lux. Designs are compared at one exposure of 20 lux. Scene illuminance in lux: an 18% grey scene imaged at f/1.8 (lens transmission 0.9), 1/30 s, 3000 K blackbody, one exposure per point, read noise 1.5 e- rms; one lux puts 1.07 e- into the on-axis green site of the CFA. CFA = measured spectral sensitivities of a smartphone image sensor, green peak scaled to 0.90.",
+ "cfa": 1.12606,
  "plane_wave_optimized": [
   {
-   "plane_wave": 1.07983,
-   "pupil": 0.93534
+   "plane_wave": 1.19974,
+   "pupil": 1.02048
   },
   {
-   "plane_wave": 0.98652,
-   "pupil": 0.87086
+   "plane_wave": 1.08873,
+   "pupil": 0.93404
   },
   {
-   "plane_wave": 0.94367,
-   "pupil": 0.87641
+   "plane_wave": 1.03099,
+   "pupil": 0.94089
   },
   {
-   "plane_wave": 0.95449,
-   "pupil": 0.89407
+   "plane_wave": 1.04393,
+   "pupil": 0.96584
   },
   {
-   "plane_wave": 1.05211,
-   "pupil": 0.87341
+   "plane_wave": 1.16614,
+   "pupil": 0.93746
   },
   {
-   "plane_wave": 0.94312,
-   "pupil": 0.87737
+   "plane_wave": 1.02947,
+   "pupil": 0.94235
   },
   {
-   "plane_wave": 0.96466,
-   "pupil": 0.8634
+   "plane_wave": 1.05949,
+   "pupil": 0.92324
   },
   {
-   "plane_wave": 1.05145,
-   "pupil": 0.95322
+   "plane_wave": 1.15998,
+   "pupil": 1.0413
   },
   {
-   "plane_wave": 1.00103,
-   "pupil": 0.88312
+   "plane_wave": 1.10014,
+   "pupil": 0.95105
   },
   {
-   "plane_wave": 0.90971,
-   "pupil": 0.86454
+   "plane_wave": 0.98653,
+   "pupil": 0.92524
   },
   {
-   "plane_wave": 1.1152,
-   "pupil": 0.92274
+   "plane_wave": 1.23819,
+   "pupil": 1.00419
   },
   {
-   "plane_wave": 1.06458,
-   "pupil": 0.8779
+   "plane_wave": 1.17886,
+   "pupil": 0.94361
   },
   {
-   "plane_wave": 0.93297,
-   "pupil": 0.8834
+   "plane_wave": 1.01689,
+   "pupil": 0.95144
   },
   {
-   "plane_wave": 0.93764,
-   "pupil": 0.8739
+   "plane_wave": 1.02395,
+   "pupil": 0.93905
   },
   {
-   "plane_wave": 1.0599,
-   "pupil": 0.93782
+   "plane_wave": 1.17136,
+   "pupil": 1.02279
   },
   {
-   "plane_wave": 0.95143,
-   "pupil": 0.89093
+   "plane_wave": 1.0387,
+   "pupil": 0.96089
   },
   {
-   "plane_wave": 0.95535,
-   "pupil": 0.91219
+   "plane_wave": 1.04282,
+   "pupil": 0.9891
   },
   {
-   "plane_wave": 1.099,
-   "pupil": 0.91652
+   "plane_wave": 1.21712,
+   "pupil": 0.99585
   },
   {
-   "plane_wave": 0.98021,
-   "pupil": 0.86216
+   "plane_wave": 1.07927,
+   "pupil": 0.92189
   },
   {
-   "plane_wave": 0.97091,
-   "pupil": 0.8962
+   "plane_wave": 1.06653,
+   "pupil": 0.96858
   },
   {
-   "plane_wave": 1.04854,
-   "pupil": 0.91285
+   "plane_wave": 1.15739,
+   "pupil": 0.99063
   },
   {
-   "plane_wave": 1.01902,
-   "pupil": 0.871
+   "plane_wave": 1.12263,
+   "pupil": 0.93367
   },
   {
-   "plane_wave": 0.94463,
-   "pupil": 0.90071
+   "plane_wave": 1.03031,
+   "pupil": 0.9739
   },
   {
-   "plane_wave": 0.9066,
-   "pupil": 0.87312
+   "plane_wave": 0.98352,
+   "pupil": 0.93811
   },
   {
-   "plane_wave": 1.11839,
-   "pupil": 0.94341
+   "plane_wave": 1.23631,
+   "pupil": 1.03035
   },
   {
-   "plane_wave": 0.95949,
-   "pupil": 0.88768
+   "plane_wave": 1.04961,
+   "pupil": 0.95658
   },
   {
-   "plane_wave": 0.98391,
-   "pupil": 0.89641
+   "plane_wave": 1.0798,
+   "pupil": 0.96931
   },
   {
-   "plane_wave": 1.066,
-   "pupil": 0.94196
+   "plane_wave": 1.18231,
+   "pupil": 1.0292
   },
   {
-   "plane_wave": 0.99156,
-   "pupil": 0.88809
+   "plane_wave": 1.09179,
+   "pupil": 0.95793
   },
   {
-   "plane_wave": 0.94993,
-   "pupil": 0.88622
+   "plane_wave": 1.03676,
+   "pupil": 0.95487
   },
   {
-   "plane_wave": 1.11886,
-   "pupil": 0.90807
+   "plane_wave": 1.24097,
+   "pupil": 0.9839
   },
   {
-   "plane_wave": 1.04966,
-   "pupil": 0.88413
-  },
-  {
-   "plane_wave": 0.93037,
-   "pupil": 0.8808
-  },
-  {
-   "plane_wave": 1.01019,
-   "pupil": 0.91122
-  },
-  {
-   "plane_wave": 1.02906,
-   "pupil": 0.92396
-  },
-  {
-   "plane_wave": 0.96411,
-   "pupil": 0.87379
-  },
-  {
-   "plane_wave": 0.95645,
-   "pupil": 0.89188
-  },
-  {
-   "plane_wave": 1.11815,
-   "pupil": 0.91182
-  },
-  {
-   "plane_wave": 1.084,
-   "pupil": 0.90055
-  },
-  {
-   "plane_wave": 0.95677,
-   "pupil": 0.8935
-  },
-  {
-   "plane_wave": 0.9587,
-   "pupil": 0.88358
-  },
-  {
-   "plane_wave": 0.98553,
-   "pupil": 0.89978
-  },
-  {
-   "plane_wave": 0.92321,
-   "pupil": 0.87127
-  },
-  {
-   "plane_wave": 0.94021,
-   "pupil": 0.90129
-  },
-  {
-   "plane_wave": 1.04328,
-   "pupil": 0.8857
-  },
-  {
-   "plane_wave": 1.00374,
-   "pupil": 0.87587
-  },
-  {
-   "plane_wave": 0.92691,
-   "pupil": 0.87137
-  },
-  {
-   "plane_wave": 0.9919,
-   "pupil": 0.91195
-  },
-  {
-   "plane_wave": 0.98695,
-   "pupil": 0.88385
-  },
-  {
-   "plane_wave": 0.92796,
-   "pupil": 0.88767
-  },
-  {
-   "plane_wave": 0.93898,
-   "pupil": 0.86796
-  },
-  {
-   "plane_wave": 1.04883,
-   "pupil": 0.90529
-  },
-  {
-   "plane_wave": 0.91603,
-   "pupil": 0.87334
-  },
-  {
-   "plane_wave": 0.97297,
-   "pupil": 0.89039
-  },
-  {
-   "plane_wave": 1.01863,
-   "pupil": 0.90993
-  },
-  {
-   "plane_wave": 1.04786,
-   "pupil": 0.88854
-  },
-  {
-   "plane_wave": 0.982,
-   "pupil": 0.89155
-  },
-  {
-   "plane_wave": 1.1881,
-   "pupil": 0.9749
-  },
-  {
-   "plane_wave": 1.04603,
-   "pupil": 0.89822
-  },
-  {
-   "plane_wave": 0.9325,
-   "pupil": 0.88284
-  },
-  {
-   "plane_wave": 0.97348,
-   "pupil": 0.89948
-  },
-  {
-   "plane_wave": 1.08191,
-   "pupil": 0.96273
-  },
-  {
-   "plane_wave": 0.93702,
-   "pupil": 0.87863
-  },
-  {
-   "plane_wave": 0.9489,
-   "pupil": 0.89747
-  },
-  {
-   "plane_wave": 1.03049,
-   "pupil": 0.88765
-  },
-  {
-   "plane_wave": 1.06141,
-   "pupil": 0.86164
-  },
-  {
-   "plane_wave": 0.98636,
-   "pupil": 0.91539
-  },
-  {
-   "plane_wave": 1.02553,
-   "pupil": 0.90387
-  },
-  {
-   "plane_wave": 0.95537,
-   "pupil": 0.88962
-  },
-  {
-   "plane_wave": 0.96373,
-   "pupil": 0.87964
-  },
-  {
-   "plane_wave": 1.0793,
-   "pupil": 0.90615
-  },
-  {
-   "plane_wave": 0.97328,
-   "pupil": 0.85575
-  },
-  {
-   "plane_wave": 0.94512,
-   "pupil": 0.86524
+   "plane_wave": 1.16541,
+   "pupil": 0.95272
   },
   {
    "plane_wave": 1.01275,
-   "pupil": 0.90075
+   "pupil": 0.94734
   },
   {
-   "plane_wave": 1.06842,
-   "pupil": 0.93395
+   "plane_wave": 1.11027,
+   "pupil": 0.98843
   },
   {
-   "plane_wave": 0.91339,
-   "pupil": 0.87531
+   "plane_wave": 1.13781,
+   "pupil": 1.00568
   },
   {
-   "plane_wave": 0.88527,
-   "pupil": 0.85748
+   "plane_wave": 1.05452,
+   "pupil": 0.93821
   },
   {
-   "plane_wave": 1.0664,
-   "pupil": 0.90195
+   "plane_wave": 1.0449,
+   "pupil": 0.96228
   },
   {
-   "plane_wave": 0.92789,
-   "pupil": 0.87439
+   "plane_wave": 1.24622,
+   "pupil": 0.98995
   },
   {
-   "plane_wave": 0.96329,
-   "pupil": 0.88708
+   "plane_wave": 1.20499,
+   "pupil": 0.97466
   },
   {
-   "plane_wave": 1.02698,
-   "pupil": 0.92546
+   "plane_wave": 1.0448,
+   "pupil": 0.96411
   },
   {
-   "plane_wave": 0.95304,
-   "pupil": 0.89256
+   "plane_wave": 1.05012,
+   "pupil": 0.9522
   },
   {
-   "plane_wave": 0.91995,
-   "pupil": 0.86626
+   "plane_wave": 1.0822,
+   "pupil": 0.97403
   },
   {
-   "plane_wave": 1.13323,
-   "pupil": 0.94025
+   "plane_wave": 1.00291,
+   "pupil": 0.93369
   },
   {
-   "plane_wave": 1.06362,
-   "pupil": 0.90957
+   "plane_wave": 1.0241,
+   "pupil": 0.97452
   },
   {
-   "plane_wave": 0.97658,
-   "pupil": 0.89821
+   "plane_wave": 1.15642,
+   "pupil": 0.95433
   },
   {
-   "plane_wave": 0.93486,
-   "pupil": 0.8681
+   "plane_wave": 1.10504,
+   "pupil": 0.94043
   },
   {
-   "plane_wave": 1.07566,
-   "pupil": 0.95038
+   "plane_wave": 1.00878,
+   "pupil": 0.93467
   },
   {
-   "plane_wave": 0.93837,
-   "pupil": 0.87951
+   "plane_wave": 1.08783,
+   "pupil": 0.98907
   },
   {
-   "plane_wave": 0.93843,
-   "pupil": 0.8929
+   "plane_wave": 1.08712,
+   "pupil": 0.95176
   },
   {
-   "plane_wave": 1.04289,
-   "pupil": 0.88268
+   "plane_wave": 1.0111,
+   "pupil": 0.95686
   },
   {
-   "plane_wave": 1.01027,
-   "pupil": 0.87577
+   "plane_wave": 1.02425,
+   "pupil": 0.93087
   },
   {
-   "plane_wave": 0.93119,
-   "pupil": 0.88326
+   "plane_wave": 1.15983,
+   "pupil": 0.98073
   },
   {
-   "plane_wave": 1.05797,
-   "pupil": 0.93489
+   "plane_wave": 0.9947,
+   "pupil": 0.93664
   },
   {
-   "plane_wave": 1.01979,
-   "pupil": 0.87192
+   "plane_wave": 1.06503,
+   "pupil": 0.96098
   },
   {
-   "plane_wave": 0.95744,
-   "pupil": 0.8903
+   "plane_wave": 1.12871,
+   "pupil": 0.98801
   },
   {
-   "plane_wave": 0.90356,
-   "pupil": 0.8575
+   "plane_wave": 1.1569,
+   "pupil": 0.95856
   },
   {
-   "plane_wave": 1.05622,
-   "pupil": 0.87827
+   "plane_wave": 1.07505,
+   "pupil": 0.96205
   },
   {
-   "plane_wave": 0.933,
-   "pupil": 0.87558
+   "plane_wave": 1.32711,
+   "pupil": 1.07308
   },
   {
-   "plane_wave": 0.9794,
-   "pupil": 0.88476
+   "plane_wave": 1.15637,
+   "pupil": 0.97154
   },
   {
-   "plane_wave": 1.23463,
-   "pupil": 0.91584
+   "plane_wave": 1.01812,
+   "pupil": 0.95082
   },
   {
-   "plane_wave": 1.28153,
-   "pupil": 0.91188
+   "plane_wave": 1.06556,
+   "pupil": 0.97328
   },
   {
-   "plane_wave": 1.15937,
-   "pupil": 0.96239
+   "plane_wave": 1.20404,
+   "pupil": 1.05656
   },
   {
-   "plane_wave": 1.20608,
-   "pupil": 0.93989
+   "plane_wave": 1.02042,
+   "pupil": 0.94441
   },
   {
-   "plane_wave": 1.24949,
-   "pupil": 0.91344
+   "plane_wave": 1.03653,
+   "pupil": 0.97038
   },
   {
-   "plane_wave": 1.11811,
-   "pupil": 0.9013
+   "plane_wave": 1.1392,
+   "pupil": 0.95729
   },
   {
-   "plane_wave": 1.24211,
-   "pupil": 0.91252
+   "plane_wave": 1.18101,
+   "pupil": 0.92155
   },
   {
-   "plane_wave": 1.23606,
-   "pupil": 0.9229
+   "plane_wave": 1.08303,
+   "pupil": 0.99355
   },
   {
-   "plane_wave": 0.91421,
-   "pupil": 0.85543
+   "plane_wave": 1.13414,
+   "pupil": 0.97925
+  },
+  {
+   "plane_wave": 1.04326,
+   "pupil": 0.95887
+  },
+  {
+   "plane_wave": 1.0553,
+   "pupil": 0.9465
+  },
+  {
+   "plane_wave": 1.19617,
+   "pupil": 0.98259
+  },
+  {
+   "plane_wave": 1.06836,
+   "pupil": 0.91301
+  },
+  {
+   "plane_wave": 1.03225,
+   "pupil": 0.9256
+  },
+  {
+   "plane_wave": 1.11266,
+   "pupil": 0.97407
+  },
+  {
+   "plane_wave": 1.18126,
+   "pupil": 1.01737
+  },
+  {
+   "plane_wave": 0.99151,
+   "pupil": 0.94005
+  },
+  {
+   "plane_wave": 0.95441,
+   "pupil": 0.91595
+  },
+  {
+   "plane_wave": 1.18101,
+   "pupil": 0.97634
+  },
+  {
+   "plane_wave": 1.009,
+   "pupil": 0.93817
+  },
+  {
+   "plane_wave": 1.05321,
+   "pupil": 0.95656
+  },
+  {
+   "plane_wave": 1.12912,
+   "pupil": 1.00652
+  },
+  {
+   "plane_wave": 1.04327,
+   "pupil": 0.96409
+  },
+  {
+   "plane_wave": 0.99973,
+   "pupil": 0.92745
+  },
+  {
+   "plane_wave": 1.25933,
+   "pupil": 1.02623
+  },
+  {
+   "plane_wave": 1.17525,
+   "pupil": 0.98594
+  },
+  {
+   "plane_wave": 1.07438,
+   "pupil": 0.97169
+  },
+  {
+   "plane_wave": 1.01934,
+   "pupil": 0.93073
+  },
+  {
+   "plane_wave": 1.18929,
+   "pupil": 1.03971
+  },
+  {
+   "plane_wave": 1.02206,
+   "pupil": 0.94573
+  },
+  {
+   "plane_wave": 1.02266,
+   "pupil": 0.96401
+  },
+  {
+   "plane_wave": 1.15845,
+   "pupil": 0.95076
+  },
+  {
+   "plane_wave": 1.11549,
+   "pupil": 0.94101
+  },
+  {
+   "plane_wave": 1.01398,
+   "pupil": 0.95053
+  },
+  {
+   "plane_wave": 1.17378,
+   "pupil": 1.02076
+  },
+  {
+   "plane_wave": 1.12606,
+   "pupil": 0.9356
+  },
+  {
+   "plane_wave": 1.04698,
+   "pupil": 0.96002
+  },
+  {
+   "plane_wave": 0.97979,
+   "pupil": 0.9164
+  },
+  {
+   "plane_wave": 1.1699,
+   "pupil": 0.94402
+  },
+  {
+   "plane_wave": 1.01701,
+   "pupil": 0.94003
+  },
+  {
+   "plane_wave": 1.07761,
+   "pupil": 0.95332
+  },
+  {
+   "plane_wave": 1.37129,
+   "pupil": 0.99396
+  },
+  {
+   "plane_wave": 1.43273,
+   "pupil": 0.99116
+  },
+  {
+   "plane_wave": 1.29201,
+   "pupil": 1.05309
+  },
+  {
+   "plane_wave": 1.34553,
+   "pupil": 1.02523
+  },
+  {
+   "plane_wave": 1.39457,
+   "pupil": 0.99077
+  },
+  {
+   "plane_wave": 1.23957,
+   "pupil": 0.97486
+  },
+  {
+   "plane_wave": 1.38509,
+   "pupil": 0.98967
+  },
+  {
+   "plane_wave": 1.38097,
+   "pupil": 1.00359
+  },
+  {
+   "plane_wave": 0.99118,
+   "pupil": 0.91106
   }
  ],
  "pupil_optimized": [
   {
-   "plane_wave": 1.21867,
-   "pupil": 1.18721
+   "plane_wave": 1.35392,
+   "pupil": 1.3232
   },
   {
-   "plane_wave": 1.04727,
-   "pupil": 1.01855
+   "plane_wave": 1.15189,
+   "pupil": 1.12017
   },
   {
-   "plane_wave": 1.18555,
-   "pupil": 1.16025
+   "plane_wave": 1.31486,
+   "pupil": 1.29255
   },
   {
-   "plane_wave": 1.20256,
-   "pupil": 1.18164
+   "plane_wave": 1.33723,
+   "pupil": 1.31749
   },
   {
-   "plane_wave": 1.12092,
-   "pupil": 1.08906
+   "plane_wave": 1.24365,
+   "pupil": 1.21083
   },
   {
-   "plane_wave": 1.19066,
-   "pupil": 1.145
+   "plane_wave": 1.31955,
+   "pupil": 1.2724
   },
   {
-   "plane_wave": 1.20313,
-   "pupil": 1.18952
+   "plane_wave": 1.3373,
+   "pupil": 1.32624
   },
   {
-   "plane_wave": 1.18126,
-   "pupil": 1.16491
+   "plane_wave": 1.31236,
+   "pupil": 1.29881
   },
   {
-   "plane_wave": 1.17467,
-   "pupil": 1.16262
+   "plane_wave": 1.30518,
+   "pupil": 1.29492
   },
   {
-   "plane_wave": 1.1551,
-   "pupil": 1.08857
+   "plane_wave": 1.27257,
+   "pupil": 1.20167
   },
   {
-   "plane_wave": 1.21505,
-   "pupil": 1.19129
+   "plane_wave": 1.35385,
+   "pupil": 1.32881
   },
   {
-   "plane_wave": 1.16573,
-   "pupil": 1.13286
+   "plane_wave": 1.2883,
+   "pupil": 1.2531
   },
   {
-   "plane_wave": 1.19312,
-   "pupil": 1.17162
+   "plane_wave": 1.32671,
+   "pupil": 1.30669
   },
   {
-   "plane_wave": 1.12966,
-   "pupil": 1.12338
+   "plane_wave": 1.25371,
+   "pupil": 1.24941
   },
   {
-   "plane_wave": 1.18665,
-   "pupil": 1.16112
+   "plane_wave": 1.31698,
+   "pupil": 1.29377
   },
   {
-   "plane_wave": 1.18449,
-   "pupil": 1.16843
+   "plane_wave": 1.31683,
+   "pupil": 1.30358
   },
   {
-   "plane_wave": 1.18629,
-   "pupil": 1.16771
+   "plane_wave": 1.31804,
+   "pupil": 1.30241
   },
   {
-   "plane_wave": 1.28862,
-   "pupil": 1.19203
+   "plane_wave": 1.43353,
+   "pupil": 1.32493
   },
   {
-   "plane_wave": 1.18447,
-   "pupil": 1.1438
+   "plane_wave": 1.31286,
+   "pupil": 1.2705
   },
   {
-   "plane_wave": 1.17021,
-   "pupil": 1.10542
+   "plane_wave": 1.29351,
+   "pupil": 1.22396
   },
   {
-   "plane_wave": 1.20781,
-   "pupil": 1.15046
+   "plane_wave": 1.33712,
+   "pupil": 1.27647
   },
   {
-   "plane_wave": 1.2408,
-   "pupil": 1.18637
+   "plane_wave": 1.37945,
+   "pupil": 1.32069
   },
   {
-   "plane_wave": 1.21109,
-   "pupil": 1.18742
+   "plane_wave": 1.34599,
+   "pupil": 1.3236
   },
   {
-   "plane_wave": 1.1901,
-   "pupil": 1.11865
+   "plane_wave": 1.3225,
+   "pupil": 1.24165
   },
   {
-   "plane_wave": 1.17369,
-   "pupil": 1.1413
+   "plane_wave": 1.30652,
+   "pupil": 1.27184
   },
   {
-   "plane_wave": 1.2015,
-   "pupil": 1.18034
+   "plane_wave": 1.33513,
+   "pupil": 1.31521
   },
   {
-   "plane_wave": 1.16768,
-   "pupil": 1.1392
+   "plane_wave": 1.29611,
+   "pupil": 1.26762
   },
   {
-   "plane_wave": 1.21834,
-   "pupil": 1.15587
+   "plane_wave": 1.35387,
+   "pupil": 1.28566
   },
   {
-   "plane_wave": 1.18819,
-   "pupil": 1.17253
+   "plane_wave": 1.32158,
+   "pupil": 1.30766
   },
   {
-   "plane_wave": 1.25168,
-   "pupil": 1.18712
+   "plane_wave": 1.39226,
+   "pupil": 1.32169
   },
   {
-   "plane_wave": 1.27023,
-   "pupil": 1.1799
+   "plane_wave": 1.41354,
+   "pupil": 1.31095
   },
   {
-   "plane_wave": 1.18218,
-   "pupil": 1.15199
+   "plane_wave": 1.31052,
+   "pupil": 1.27999
   },
   {
-   "plane_wave": 1.09903,
-   "pupil": 1.06699
+   "plane_wave": 1.20983,
+   "pupil": 1.17891
   },
   {
-   "plane_wave": 1.18981,
-   "pupil": 1.1219
+   "plane_wave": 1.32493,
+   "pupil": 1.24884
   },
   {
-   "plane_wave": 1.18949,
-   "pupil": 1.13383
+   "plane_wave": 1.32429,
+   "pupil": 1.26154
   },
   {
-   "plane_wave": 1.17455,
-   "pupil": 1.16698
+   "plane_wave": 1.30313,
+   "pupil": 1.29964
   },
   {
-   "plane_wave": 1.22385,
-   "pupil": 1.18892
+   "plane_wave": 1.36053,
+   "pupil": 1.32399
   },
   {
-   "plane_wave": 1.24452,
-   "pupil": 1.18277
+   "plane_wave": 1.38005,
+   "pupil": 1.3149
   },
   {
-   "plane_wave": 1.2267,
-   "pupil": 1.18507
+   "plane_wave": 1.36354,
+   "pupil": 1.32025
   },
   {
-   "plane_wave": 1.21522,
-   "pupil": 1.15398
+   "plane_wave": 1.34971,
+   "pupil": 1.28353
   },
   {
-   "plane_wave": 1.15966,
-   "pupil": 1.08758
+   "plane_wave": 1.27821,
+   "pupil": 1.20157
   },
   {
-   "plane_wave": 1.18576,
-   "pupil": 1.17708
+   "plane_wave": 1.31543,
+   "pupil": 1.3126
   },
   {
-   "plane_wave": 1.28988,
-   "pupil": 1.19886
+   "plane_wave": 1.43498,
+   "pupil": 1.33279
   },
   {
-   "plane_wave": 1.22431,
-   "pupil": 1.19018
+   "plane_wave": 1.36202,
+   "pupil": 1.3264
   },
   {
-   "plane_wave": 1.21045,
-   "pupil": 1.1517
+   "plane_wave": 1.34445,
+   "pupil": 1.28148
   },
   {
-   "plane_wave": 1.19945,
-   "pupil": 1.17293
+   "plane_wave": 1.32797,
+   "pupil": 1.30356
   },
   {
-   "plane_wave": 1.1986,
-   "pupil": 1.14873
+   "plane_wave": 1.33297,
+   "pupil": 1.27854
   },
   {
-   "plane_wave": 1.17011,
-   "pupil": 1.1372
+   "plane_wave": 1.29777,
+   "pupil": 1.26273
   },
   {
-   "plane_wave": 1.22322,
-   "pupil": 1.1601
+   "plane_wave": 1.35361,
+   "pupil": 1.28877
   },
   {
-   "plane_wave": 1.2446,
-   "pupil": 1.16233
+   "plane_wave": 1.38392,
+   "pupil": 1.29385
   },
   {
-   "plane_wave": 1.21335,
-   "pupil": 1.18394
+   "plane_wave": 1.34893,
+   "pupil": 1.31987
   },
   {
-   "plane_wave": 1.18753,
-   "pupil": 1.16317
+   "plane_wave": 1.31896,
+   "pupil": 1.2961
   },
   {
-   "plane_wave": 1.20258,
-   "pupil": 1.18837
+   "plane_wave": 1.33755,
+   "pupil": 1.32521
   },
   {
-   "plane_wave": 1.17385,
-   "pupil": 1.10419
+   "plane_wave": 1.29432,
+   "pupil": 1.22161
   },
   {
-   "plane_wave": 1.22486,
-   "pupil": 1.14599
+   "plane_wave": 1.36012,
+   "pupil": 1.27127
   },
   {
-   "plane_wave": 1.23277,
-   "pupil": 1.16234
+   "plane_wave": 1.37341,
+   "pupil": 1.29349
   },
   {
-   "plane_wave": 1.16798,
-   "pupil": 1.11599
+   "plane_wave": 1.2883,
+   "pupil": 1.23507
   },
   {
-   "plane_wave": 1.07482,
-   "pupil": 1.05444
+   "plane_wave": 1.18528,
+   "pupil": 1.16721
   },
   {
-   "plane_wave": 1.23832,
-   "pupil": 1.16169
+   "plane_wave": 1.37811,
+   "pupil": 1.2938
   },
   {
-   "plane_wave": 1.20109,
-   "pupil": 1.1613
+   "plane_wave": 1.33366,
+   "pupil": 1.29235
   },
   {
-   "plane_wave": 1.18522,
-   "pupil": 1.12715
+   "plane_wave": 1.30621,
+   "pupil": 1.24779
   },
   {
-   "plane_wave": 1.2306,
-   "pupil": 1.18749
+   "plane_wave": 1.36925,
+   "pupil": 1.32235
   },
   {
-   "plane_wave": 1.18514,
-   "pupil": 1.13615
+   "plane_wave": 1.31516,
+   "pupil": 1.26239
   },
   {
-   "plane_wave": 1.18484,
-   "pupil": 1.15807
+   "plane_wave": 1.31221,
+   "pupil": 1.2896
   },
   {
-   "plane_wave": 1.05796,
-   "pupil": 1.05394
+   "plane_wave": 1.17002,
+   "pupil": 1.16897
   },
   {
-   "plane_wave": 1.22679,
-   "pupil": 1.1871
+   "plane_wave": 1.3642,
+   "pupil": 1.32263
   },
   {
-   "plane_wave": 1.27427,
-   "pupil": 1.19935
+   "plane_wave": 1.41736,
+   "pupil": 1.33466
   },
   {
-   "plane_wave": 1.21248,
-   "pupil": 1.17734
+   "plane_wave": 1.3498,
+   "pupil": 1.31264
   },
   {
-   "plane_wave": 1.12349,
-   "pupil": 1.11457
+   "plane_wave": 1.24645,
+   "pupil": 1.23959
   },
   {
-   "plane_wave": 1.21726,
-   "pupil": 1.1976
+   "plane_wave": 1.35315,
+   "pupil": 1.3347
   },
   {
-   "plane_wave": 1.14805,
-   "pupil": 1.10492
+   "plane_wave": 1.2732,
+   "pupil": 1.22346
   }
  ],
  "M1": {
-  "plane_wave": 1.222,
-  "pupil": 1.19738
+  "plane_wave": 1.36032,
+  "pupil": 1.33551
  },
  "literature_reconstructions": {
   "Kim et al.": {
-   "plane_wave": 1.20074,
-   "pupil": 0.97002
+   "plane_wave": 1.33005,
+   "pupil": 1.07028
   },
   "Zou et al.": {
-   "plane_wave": 1.11465,
-   "pupil": 0.94223
+   "plane_wave": 1.23446,
+   "pupil": 1.02657
   },
   "Park et al.": {
-   "plane_wave": 1.2304,
-   "pupil": 0.921
+   "plane_wave": 1.36718,
+   "pupil": 1.00106
   },
   "Li et al.": {
-   "plane_wave": 0.9711,
-   "pupil": 0.8114
+   "plane_wave": 1.07395,
+   "pupil": 0.86716
   }
  }
 }
